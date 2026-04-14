@@ -77,9 +77,7 @@ export function ChatListItem({
   switch (convo.kind) {
     case 'group': {
       const groupInfo = convo.kindData
-      // TODO: members are missing the role property - find out if intentional
-      // const owner = convo.members.find(member => member.role === 'owner')
-      const owner = convo.members[0] // owner will always be the first member
+      const owner = convo.members.find(member => member.role === 'owner')
       if (
         !bsky.dangerousIsType<ChatBskyConvoDefs.GroupConvoData>(
           groupInfo,
