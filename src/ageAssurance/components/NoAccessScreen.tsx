@@ -174,9 +174,9 @@ export function NoAccessScreen() {
                       </Text>
                       <Text style={[textStyles]}>
                         <Trans>
-                          You are accessing Bluesky from a region that legally
-                          requires us to verify your age before allowing you to
-                          access the app.
+                          You are accessing Turtle Island from a region that
+                          legally requires us to verify your age before allowing
+                          you to access the app.
                         </Trans>
                       </Text>
 
@@ -184,7 +184,8 @@ export function NoAccessScreen() {
                         <Text style={[textStyles]}>
                           <Trans>
                             Unfortunately, your declared age indicates that you
-                            are not old enough to access Bluesky in your region.
+                            are not old enough to access Turtle Island in your
+                            region.
                           </Trans>
                         </Text>
                       )}
@@ -199,7 +200,7 @@ export function NoAccessScreen() {
                     <Text style={[textStyles]}>
                       <Trans>
                         Unfortunately, the birthdate you have saved to your
-                        profile makes you too young to access Bluesky.
+                        profile makes you too young to access Turtle Island.
                       </Trans>
                     </Text>
 
@@ -328,8 +329,8 @@ function AccessSection() {
         {isBlocked ? (
           <Admonition type="warning">
             <Trans>
-              You are currently unable to access Bluesky's Age Assurance flow.
-              Please{' '}
+              You are currently unable to access Turtle Island's Age Assurance
+              flow. Please{' '}
               <SimpleInlineLinkText
                 label={_(msg`Contact our moderation team`)}
                 {...createStaticClick(() => {

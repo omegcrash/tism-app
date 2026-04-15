@@ -145,7 +145,7 @@ export function LiveNowBetaDialog() {
                 ]}
                 alt={_(
                   msg({
-                    message: `A screenshot of a post from @esb.lol, showing the user is currently livestreaming content on Twitch. The post reads: "Hello! I'm live on Twitch, and I'm testing Bluesky's latest feature too!"`,
+                    message: `A screenshot of a post from @esb.lol, showing the user is currently livestreaming content on Twitch. The post reads: "Hello! I'm live on Twitch, and I'm testing TISM's latest feature too!"`,
                     comment:
                       'Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.',
                   }),
@@ -179,9 +179,9 @@ export function LiveNowBetaDialog() {
                 },
               ]}>
               <Trans>
-                Streaming on Twitch? Set your live status on Bluesky to add a
-                badge to your avatar. Tapping it takes people straight to your
-                stream.
+                Streaming on Twitch? Set your live status on Turtle Island to
+                add a badge to your avatar. Tapping it takes people straight to
+                your stream.
               </Trans>
             </Text>
           </View>

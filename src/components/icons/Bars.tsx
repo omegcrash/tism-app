@@ -1,5 +1,5 @@
-import {createSinglePathSVG} from './TEMPLATE'
+import {List} from 'phosphor-react-native'
 
-export const Bars3_Stroke2_Corner0_Rounded = createSinglePathSVG({
-  path: 'M3 5a1 1 0 0 0 0 2h18a1 1 0 1 0 0-2H3Zm-1 7a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Z',
-})
+import {stroke} from './PhosphorTemplate'
+
+export const Bars3_Stroke2_Corner0_Rounded = stroke(List)

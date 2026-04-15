@@ -153,8 +153,8 @@ function Inner({style}: ViewStyleProp & {}) {
           {isBlocked ? (
             <Admonition type="warning">
               <Trans>
-                You are currently unable to access Bluesky's Age Assurance flow.
-                Please{' '}
+                You are currently unable to access Turtle Island's Age Assurance
+                flow. Please{' '}
                 <InlineLinkText
                   label={_(msg`Contact our moderation team`)}
                   {...createStaticClick(() => {

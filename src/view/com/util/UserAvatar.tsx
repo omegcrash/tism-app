@@ -7,7 +7,7 @@ import {
   View,
   type ViewStyle,
 } from 'react-native'
-import Svg, {Circle, Path, Rect} from 'react-native-svg'
+import Svg, {Circle, Ellipse, Path, Rect} from 'react-native-svg'
 import {Image as ExpoImage} from 'expo-image'
 import {type ModerationUI} from '@atproto/api'
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome'
@@ -189,6 +189,7 @@ let DefaultAvatar = ({
     )
   }
   // TODO: shape=square
+  // TISM: Teal turtle on blue background
   return (
     <Svg
       testID="userAvatarFallback"
@@ -198,14 +199,70 @@ let DefaultAvatar = ({
       fill="none"
       stroke="none"
       style={aviStyle}>
+      {/* Blue background */}
       <Circle cx="12" cy="12" r="12" fill="#0070ff" />
-      <Circle cx="12" cy="9.5" r="3.5" fill="#fff" />
-      <Path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="#fff"
-        d="M 12.058 22.784 C 9.422 22.784 7.007 21.836 5.137 20.262 C 5.667 17.988 8.534 16.25 11.99 16.25 C 15.494 16.25 18.391 18.036 18.864 20.357 C 17.01 21.874 14.64 22.784 12.058 22.784 Z"
+      {/* Turtle shell */}
+      <Ellipse cx="12" cy="12.5" rx="6" ry="5" fill="#14A894" />
+      {/* Shell pattern */}
+      <Ellipse
+        cx="12"
+        cy="12.5"
+        rx="4"
+        ry="3.2"
+        fill="none"
+        stroke="#14A894"
+        strokeWidth="0.5"
+        strokeOpacity="0.5"
       />
+      <Circle
+        cx="12"
+        cy="12.5"
+        r="1.6"
+        fill="none"
+        stroke="#14A894"
+        strokeWidth="0.5"
+        strokeOpacity="0.5"
+      />
+      {/* Head */}
+      <Ellipse cx="12" cy="5.5" rx="2" ry="2.2" fill="#14A894" />
+      {/* Front left leg */}
+      <Ellipse
+        cx="6.5"
+        cy="9"
+        rx="1.6"
+        ry="1.2"
+        fill="#14A894"
+        transform="rotate(-30 6.5 9)"
+      />
+      {/* Front right leg */}
+      <Ellipse
+        cx="17.5"
+        cy="9"
+        rx="1.6"
+        ry="1.2"
+        fill="#14A894"
+        transform="rotate(30 17.5 9)"
+      />
+      {/* Back left leg */}
+      <Ellipse
+        cx="6.5"
+        cy="16"
+        rx="1.6"
+        ry="1.2"
+        fill="#14A894"
+        transform="rotate(30 6.5 16)"
+      />
+      {/* Back right leg */}
+      <Ellipse
+        cx="17.5"
+        cy="16"
+        rx="1.6"
+        ry="1.2"
+        fill="#14A894"
+        transform="rotate(-30 17.5 16)"
+      />
+      {/* Tail */}
+      <Ellipse cx="12" cy="19" rx="1" ry="1.5" fill="#14A894" />
     </Svg>
   )
 }
