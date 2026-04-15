@@ -1,12 +1,19 @@
-import {
-  createThemes,
-  DEFAULT_PALETTE,
-  DEFAULT_SUBDUED_PALETTE,
-} from '@bsky.app/alf'
+import {createThemes} from '@bsky.app/alf'
 
+import {TISM_PALETTE, TISM_SUBDUED_PALETTE} from './tism-palette'
+
+/**
+ * TISM Themes - Turtle Island Social Media
+ *
+ * Using custom palette with:
+ * - Turquoise primary (sacred color)
+ * - Warm earth tones throughout
+ * - Forest greens for positive
+ * - Terracotta for negative
+ */
 const DEFAULT_THEMES = createThemes({
-  defaultPalette: DEFAULT_PALETTE,
-  subduedPalette: DEFAULT_SUBDUED_PALETTE,
+  defaultPalette: TISM_PALETTE,
+  subduedPalette: TISM_SUBDUED_PALETTE,
 })
 
 export const themes = {
