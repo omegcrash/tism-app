@@ -115,7 +115,7 @@ export function WelcomeModal({control}: WelcomeModalProps) {
                       a.user_select_none,
                       {color: '#354358', letterSpacing: -0.5},
                     ]}>
-                    Bluesky
+                    TISM
                   </Text>
                 </View>
               </View>
@@ -160,7 +160,7 @@ export function WelcomeModal({control}: WelcomeModalProps) {
                     color="primary"
                     style={{
                       width: 200,
-                      backgroundColor: '#006AFF',
+                      backgroundColor: '#14A894',
                     }}>
                     <ButtonText>
                       <Trans>Create account</Trans>
@@ -176,7 +176,7 @@ export function WelcomeModal({control}: WelcomeModalProps) {
                     hoverStyle={[a.bg_transparent]}>
                     {({hovered}) => (
                       <ButtonText
-                        style={[hovered && [a.underline], {color: '#006AFF'}]}>
+                        style={[hovered && [a.underline], {color: '#14A894'}]}>
                         <Trans>Explore the app</Trans>
                       </ButtonText>
                     )}
@@ -200,7 +200,7 @@ export function WelcomeModal({control}: WelcomeModalProps) {
                         style={[
                           a.font_medium,
                           {
-                            color: '#006AFF',
+                            color: '#14A894',
                             fontSize: undefined,
                           },
                           signInLinkHovered && a.underline,

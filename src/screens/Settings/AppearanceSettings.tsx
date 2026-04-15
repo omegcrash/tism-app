@@ -50,7 +50,7 @@ export function AppearanceSettingsScreen({}: Props) {
   )
 
   const onChangeFontFamily = useCallback(
-    (value: 'system' | 'theme') => {
+    (value: 'system' | 'theme' | 'dyslexia') => {
       fonts.setFontFamily(value)
     },
     [fonts],
@@ -127,7 +127,7 @@ export function AppearanceSettingsScreen({}: Props) {
               <AppearanceToggleButtonGroup
                 title={_(msg`Font`)}
                 description={_(
-                  msg`For the best experience, we recommend using the theme font.`,
+                  msg`Dyslexia-friendly font uses Lexend for improved readability.`,
                 )}
                 icon={Aa}
                 items={[
@@ -138,6 +138,10 @@ export function AppearanceSettingsScreen({}: Props) {
                   {
                     label: _(msg`Theme`),
                     name: 'theme',
+                  },
+                  {
+                    label: _(msg`Dyslexia`),
+                    name: 'dyslexia',
                   },
                 ]}
                 value={fonts.family}

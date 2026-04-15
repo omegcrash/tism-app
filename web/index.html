@@ -14,10 +14,13 @@
     <!--
       Preconnect to essential domains
     -->
-    <link rel="preconnect" href="https://bsky.social">
-    <link rel="preconnect" href="https://go.bsky.app">
+    <link rel="preconnect" href="https://tism.social">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>%WEB_TITLE%</title>
 
+    <!-- TISM: Lexend font for dyslexia-friendly reading -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preload" as="font" type="font/woff2" href="/static/media/InterVariable.c504db5c06caaf7cdfba.woff2" crossorigin>
     <link rel="stylesheet" href="/static/style.css">
 
@@ -57,17 +60,18 @@
         -ms-overflow-style: scrollbar;
         font-synthesis-weight: none;
       }
+      /* TISM: Warm earth tones */
       :root {
-        --text: black;
-        --background: white;
-        --backgroundLight: #e2e7ee;
+        --text: #1A1512;
+        --background: #FFFAF5;
+        --backgroundLight: #EDE5DC;
       }
       @media (prefers-color-scheme: dark) {
         :root {
           color-scheme: dark;
-          --text: white;
-          --background: black;
-          --backgroundLight: #232e3e;
+          --text: #FFFAF5;
+          --background: #1A1512;
+          --backgroundLight: #2A2520;
         }
       }
       html,
@@ -78,31 +82,32 @@
         min-height: 100%;
         width: 100%;
       }
+      /* TISM theme variants */
       html.theme--light,
       html.theme--light body,
       html.theme--light #root {
-        background-color: white;
-        --text: black;
-        --background: white;
-        --backgroundLight: #DCE2EA;
+        background-color: #FFFAF5;
+        --text: #1A1512;
+        --background: #FFFAF5;
+        --backgroundLight: #DDD3C8;
       }
       html.theme--dark,
       html.theme--dark body,
       html.theme--dark #root {
         color-scheme: dark;
-        background-color: black;
-        --text: white;
-        --background: black;
-        --backgroundLight: #232E3E;
+        background-color: #1A1512;
+        --text: #FFFAF5;
+        --background: #1A1512;
+        --backgroundLight: #2A2520;
       }
       html.theme--dim,
       html.theme--dim body,
       html.theme--dim #root {
         color-scheme: dark;
-        background-color: #151D28;
-        --text: white;
-        --background: #151D28;
-        --backgroundLight: #2C3A4E;
+        background-color: #151210;
+        --text: #FFFAF5;
+        --background: #151210;
+        --backgroundLight: #2C2721;
       }
       #splash {
         display: flex;
@@ -190,8 +195,18 @@
 
     <!-- The root element for your Expo app. -->
     <div id="splash">
-      <!-- Bluesky SVG -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 57"><path fill="#006AFF" d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"/></svg>
+      <!-- TISM Turtle SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+        <ellipse cx="32" cy="34" rx="18" ry="16" fill="#14A894"/>
+        <ellipse cx="32" cy="34" rx="12" ry="10" fill="none" stroke="#14A894" stroke-width="1.5" stroke-opacity="0.4"/>
+        <circle cx="32" cy="34" r="5" fill="none" stroke="#14A894" stroke-width="1.5" stroke-opacity="0.4"/>
+        <ellipse cx="32" cy="14" rx="6" ry="7" fill="#14A894"/>
+        <ellipse cx="16" cy="26" rx="5" ry="4" fill="#14A894" transform="rotate(-30 16 26)"/>
+        <ellipse cx="48" cy="26" rx="5" ry="4" fill="#14A894" transform="rotate(30 48 26)"/>
+        <ellipse cx="16" cy="44" rx="5" ry="4" fill="#14A894" transform="rotate(30 16 44)"/>
+        <ellipse cx="48" cy="44" rx="5" ry="4" fill="#14A894" transform="rotate(-30 48 44)"/>
+        <ellipse cx="32" cy="54" rx="3" ry="5" fill="#14A894"/>
+      </svg>
     </div>
     <div id="root">
     </div>

@@ -5,6 +5,13 @@ import {type Device, device} from '#/storage'
 
 const WEB_FONT_FAMILIES = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"`
 
+/**
+ * TISM: Dyslexia-friendly font stack
+ * Lexend is designed for reading ease and accessibility
+ * OpenDyslexic as fallback for those who prefer it
+ */
+const DYSLEXIA_FONT_FAMILIES = `"Lexend", "OpenDyslexic", "Comic Sans MS", sans-serif`
+
 const factor = 0.0625 // 1 - (15/16)
 const fontScaleMultipliers: Record<Device['fontScale'], number> = {
   '-2': 1 - factor * 1, // unused
@@ -37,7 +44,10 @@ export function setFontFamily(fontFamily: Device['fontFamily']) {
 /*
  * Unused fonts are commented out, but the files are there if we need them.
  */
-export function applyFonts(style: TextStyle, fontFamily: 'system' | 'theme') {
+export function applyFonts(
+  style: TextStyle,
+  fontFamily: 'system' | 'theme' | 'dyslexia',
+) {
   if (fontFamily === 'theme') {
     if (IS_ANDROID) {
       style.fontFamily =
@@ -89,8 +99,37 @@ export function applyFonts(style: TextStyle, fontFamily: 'system' | 'theme') {
     } else {
       style.fontVariant = (style.fontVariant || []).concat('no-contextual')
     }
+  } else if (fontFamily === 'dyslexia') {
+    /**
+     * TISM: Dyslexia-friendly font option
+     * Uses Lexend (Google Font) for improved readability
+     * Designed for neurodivergent users
+     */
+    if (IS_WEB) {
+      style.fontFamily = DYSLEXIA_FONT_FAMILIES
+    } else if (IS_ANDROID) {
+      // On Android, use bundled Lexend or fall back to system
+      style.fontFamily =
+        {
+          400: 'Lexend-Regular',
+          500: 'Lexend-Medium',
+          600: 'Lexend-SemiBold',
+          700: 'Lexend-Bold',
+          800: 'Lexend-Bold',
+          900: 'Lexend-Bold',
+        }[String(style.fontWeight || '400')] || 'Lexend-Regular'
+
+      delete style.fontWeight
+      delete style.fontStyle
+    } else {
+      // iOS - use Lexend variable font
+      style.fontFamily = 'Lexend'
+    }
+
+    // Dyslexia-friendly: slightly increased letter spacing
+    style.letterSpacing = 0.5
   } else {
-    // fallback families only supported on web
+    // system font
     if (IS_WEB) {
       style.fontFamily = style.fontFamily || WEB_FONT_FAMILIES
     }
