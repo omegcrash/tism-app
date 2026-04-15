@@ -3,11 +3,13 @@ import {ActivityIndicator, View} from 'react-native'
 import {type AppBskyFeedDefs} from '@atproto/api'
 import {Trans, useLingui} from '@lingui/react/macro'
 
+import {isFediverseHandle} from '#/lib/api/activitypub'
 import {urls} from '#/lib/constants'
 import {usePostViewTracking} from '#/lib/hooks/usePostViewTracking'
 import {useCallOnce} from '#/lib/once'
 import {cleanError} from '#/lib/strings/errors'
 import {augmentSearchQuery} from '#/lib/strings/helpers'
+import {useFederatedSearchQuery} from '#/state/queries/activitypub'
 import {useActorSearch} from '#/state/queries/actor-search'
 import {usePopularFeedsSearch} from '#/state/queries/feed'
 import {useSearchPostsQuery} from '#/state/queries/search-posts'
@@ -20,6 +22,7 @@ import {Post} from '#/view/com/post/Post'
 import {ProfileCardWithFollowBtn} from '#/view/com/profile/ProfileCard'
 import {List} from '#/view/com/util/List'
 import {atoms as a, useTheme, web} from '#/alf'
+import {APProfileCard} from '#/components/APProfileCard'
 import * as FeedCard from '#/components/FeedCard'
 import * as Layout from '#/components/Layout'
 import {InlineLinkText} from '#/components/Link'
@@ -336,7 +339,7 @@ let SearchScreenPostResults = ({
 
   return error ? (
     <EmptyState
-      messageText={l`We’re sorry, but your search could not be completed. Please try again in a few minutes.`}
+      messageText={l`We're sorry, but your search could not be completed. Please try again in a few minutes.`}
       error={cleanError(error)}
     />
   ) : (
@@ -427,6 +430,10 @@ let SearchScreenUserResults = ({
   const {hasSession} = useSession()
   const [isPTR, setIsPTR] = useState(false)
 
+  // Check if this looks like a fediverse handle (@user@domain.tld)
+  const isAPQuery = isFediverseHandle(query)
+
+  // AT Protocol actor search
   const {
     isFetched,
     data: results,
@@ -438,7 +445,17 @@ let SearchScreenUserResults = ({
     hasNextPage,
   } = useActorSearch({
     query,
-    enabled: active,
+    enabled: active && !isAPQuery, // Skip AT search for pure AP handles
+  })
+
+  // ActivityPub profile resolution (for fediverse handles)
+  const {
+    data: apProfile,
+    isFetched: apFetched,
+    isFetching: apFetching,
+  } = useFederatedSearchQuery({
+    query,
+    enabled: active && isAPQuery,
   })
 
   const onPullToRefresh = useCallback(async () => {
@@ -459,20 +476,38 @@ let SearchScreenUserResults = ({
   const fireTracking = useCallOnce(() => {
     ax.metric('search:results:loaded', {
       tab: 'people',
-      initialCount: profiles.length,
+      initialCount: profiles.length + (apProfile ? 1 : 0),
     })
   })
-  if (isFetched) {
+  if (isFetched || apFetched) {
     fireTracking()
   }
 
   if (error) {
     return (
       <EmptyState
-        messageText={l`We’re sorry, but your search could not be completed. Please try again in a few minutes.`}
+        messageText={l`We're sorry, but your search could not be completed. Please try again in a few minutes.`}
         error={error.toString()}
       />
     )
+  }
+
+  // Show AP profile result for fediverse handles
+  if (isAPQuery) {
+    if (apFetching) {
+      return <Loader />
+    }
+    if (apFetched && apProfile) {
+      return (
+        <Layout.Content>
+          <APProfileCard profile={apProfile} noBorder />
+        </Layout.Content>
+      )
+    }
+    if (apFetched && !apProfile) {
+      return <EmptyState messageText={<NoResultsText query={query} />} />
+    }
+    return <Loader />
   }
 
   return isFetched && profiles ? (
