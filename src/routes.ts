@@ -71,6 +71,7 @@ export const router = new Router<AllNavigatableRoutes>({
   ActivityNotificationSettings: '/settings/notifications/activity',
   MiscellaneousNotificationSettings: '/settings/notifications/miscellaneous',
   FindContactsSettings: '/settings/find-contacts',
+  ImportFollows: '/settings/import',
   // support
   Support: '/support',
   PrivacyPolicy: '/support/privacy',

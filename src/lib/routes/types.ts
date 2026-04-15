@@ -69,6 +69,7 @@ export type CommonNavigatorParams = {
   AboutSettings: undefined
   AppIconSettings: undefined
   FindContactsSettings: undefined
+  ImportFollows: undefined
   Search: {q?: string; tab?: 'user' | 'profile' | 'feed'}
   Hashtag: {tag: string; author?: string}
   Topic: {topic: string}
