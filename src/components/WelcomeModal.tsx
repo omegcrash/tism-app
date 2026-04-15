@@ -144,11 +144,11 @@ export function WelcomeModal({control}: WelcomeModalProps) {
                       letterSpacing: -0.5,
                     }),
                   ]}>
-                  <Trans>Real people.</Trans>
+                  <Trans>Turtle Island.</Trans>
                   {'\n'}
-                  <Trans>Real conversations.</Trans>
+                  <Trans>Your community.</Trans>
                   {'\n'}
-                  <Trans>Social media you control.</Trans>
+                  <Trans>Social media for all of us.</Trans>
                 </Text>
               </View>
               <View style={[a.gap_md, a.align_center]}>
