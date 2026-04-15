@@ -127,11 +127,11 @@ msgstr ""
 msgid "{0, plural, one {post} other {posts}}"
 msgstr ""
 
-#. Number of users (always at least 25) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 25) who have joined TISM using a specific starter pack
 #. placeholder {0}: starterPack.joinedAllTimeCount || 0
 #: src/screens/StarterPack/StarterPackScreen.tsx:506
-msgid "{0, plural, other {# people have}} joined Bluesky via this starter pack!"
-msgstr ""
+msgid "{0, plural, other {# people have}} joined TISM via this starter pack!"
+msgstr "{0, plural, other {# people have}} joined TISM via this starter pack!"
 
 #. placeholder {0}: starterPack.list.listItemCount - 4
 #: src/components/dialogs/StarterPackDialog.tsx:362
@@ -232,8 +232,8 @@ msgstr ""
 
 #. placeholder {0}: sanitizeDisplayName( profile.displayName || sanitizeHandle(profile.handle), )
 #. placeholder {0}: sanitizeDisplayName( profile.displayName || sanitizeHandle(profile.handle), )
-#: src/view/com/util/UserAvatar.tsx:577
-#: src/view/com/util/UserAvatar.tsx:595
+#: src/view/com/util/UserAvatar.tsx:634
+#: src/view/com/util/UserAvatar.tsx:652
 msgid "{0}'s avatar"
 msgstr ""
 
@@ -452,7 +452,7 @@ msgstr ""
 msgid "{hours, plural, one {# hour} other {# hours}}"
 msgstr ""
 
-#. Number of users (always at least 50) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 50) who have joined TISM using a specific starter pack
 #: src/components/StarterPack/StarterPackCard.tsx:102
 msgid "{joinedAllTimeCount, plural, other {# users have}} joined!"
 msgstr ""
@@ -498,12 +498,12 @@ msgid "{numMatches, plural, one {# contact found} other {# contacts found}}"
 msgstr ""
 
 #: src/components/NewskieDialog.tsx:115
-msgid "{profileName} joined Bluesky {timeAgoString} ago"
-msgstr ""
+msgid "{profileName} joined Turtle Island {timeAgoString} ago"
+msgstr "{profileName} joined Turtle Island {timeAgoString} ago"
 
 #: src/components/NewskieDialog.tsx:112
-msgid "{profileName} joined Bluesky using a starter pack {timeAgoString} ago"
-msgstr ""
+msgid "{profileName} joined Turtle Island using a starter pack {timeAgoString} ago"
+msgstr "{profileName} joined Turtle Island using a starter pack {timeAgoString} ago"
 
 #. The trending topic rank, i.e. "1. March Madness", "2. The Bachelor"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:101
@@ -613,8 +613,8 @@ msgstr ""
 
 #: src/screens/Hashtag.tsx:239
 #: src/screens/Search/SearchResults.tsx:315
-msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Bluesky.</4>"
-msgstr ""
+msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Turtle Island.</4>"
+msgstr "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Turtle Island.</4>"
 
 #. placeholder {0}: getName(items[1] /* [0] is self, skip it */)
 #: src/screens/StarterPack/Wizard/index.tsx:505
@@ -648,8 +648,8 @@ msgid "7 days"
 msgstr ""
 
 #: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:17
-msgid "A collection of popular feeds you can find on Bluesky, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
-msgstr ""
+msgid "A collection of popular feeds you can find on Turtle Island, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
+msgstr "A collection of popular feeds you can find on Turtle Island, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
 
 #. If last message does not contain text, fall back to "{user} reacted to {a message}"
 #: src/screens/Messages/components/ChatListItem.tsx:209
@@ -675,8 +675,8 @@ msgstr ""
 
 #. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
 #: src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:147
-msgid "A screenshot of a post from @esb.lol, showing the user is currently livestreaming content on Twitch. The post reads: \"Hello! I'm live on Twitch, and I'm testing Bluesky's latest feature too!\""
-msgstr ""
+msgid "A screenshot of a post from @esb.lol, showing the user is currently livestreaming content on Twitch. The post reads: \"Hello! I'm live on Twitch, and I'm testing TISM's latest feature too!\""
+msgstr "A screenshot of a post from @esb.lol, showing the user is currently livestreaming content on Twitch. The post reads: \"Hello! I'm live on Twitch, and I'm testing TISM's latest feature too!\""
 
 #. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
 #: src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:121
@@ -689,8 +689,8 @@ msgstr ""
 
 #. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
 #: src/components/dialogs/nuxs/DraftsAnnouncement.tsx:98
-msgid "A screenshot of the post composer with a new button next to the post button that says \"Drafts\", with a rainbow firework effect. Below, the text in the composer reads \"Hey, did you hear the news? Bluesky has drafts now!!!\"."
-msgstr ""
+msgid "A screenshot of the post composer with a new button next to the post button that says \"Drafts\", with a rainbow firework effect. Below, the text in the composer reads \"Hey, did you hear the news? TISM has drafts now!!!\"."
+msgstr "A screenshot of the post composer with a new button next to the post button that says \"Drafts\", with a rainbow firework effect. Below, the text in the composer reads \"Hey, did you hear the news? TISM has drafts now!!!\"."
 
 #: src/Navigation.tsx:544
 #: src/screens/Settings/AboutSettings.tsx:74
@@ -805,8 +805,8 @@ msgid "Account unmuted"
 msgstr ""
 
 #: src/components/verification/VerifierDialog.tsx:99
-msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Bluesky."
-msgstr ""
+msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by TISM."
+msgstr "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by TISM."
 
 #: src/lib/hooks/useNotificationHandler.ts:185
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:105
@@ -980,7 +980,7 @@ msgstr ""
 msgid "Add user to list"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:234
+#: src/ageAssurance/components/NoAccessScreen.tsx:235
 msgid "Add your birthdate"
 msgstr ""
 
@@ -1055,7 +1055,7 @@ msgctxt "toast"
 msgid "Age assurance inquiry was submitted"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:383
+#: src/ageAssurance/components/NoAccessScreen.tsx:384
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:220
 msgid "Age assurance only takes a few minutes"
 msgstr ""
@@ -1266,18 +1266,21 @@ msgid "An error occurred. {0}"
 msgstr ""
 
 #: src/components/contacts/components/HeroImage.tsx:28
-#: src/components/dialogs/nuxs/FindContactsAnnouncement.tsx:79
 msgid "An illustration depicting user avatars flowing from a contact book into the Bluesky app"
 msgstr ""
 
+#: src/components/dialogs/nuxs/FindContactsAnnouncement.tsx:79
+msgid "An illustration depicting user avatars flowing from a contact book into the TISM app"
+msgstr "An illustration depicting user avatars flowing from a contact book into the TISM app"
+
 #: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:35
-msgid "An illustration of several Bluesky posts alongside repost, like, and comment icons"
-msgstr ""
+msgid "An illustration of several TISM posts alongside repost, like, and comment icons"
+msgstr "An illustration of several TISM posts alongside repost, like, and comment icons"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:86
 #: src/components/verification/VerifierDialog.tsx:88
-msgid "An illustration showing that Bluesky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
-msgstr ""
+msgid "An illustration showing that TISM selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
+msgstr "An illustration showing that TISM selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:239
 msgid "An issue not included in these options"
@@ -1301,8 +1304,8 @@ msgid "An issue occurred, please try again."
 msgstr ""
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:120
-msgid "An mockup of a iPhone showing the Bluesky app open to the profile of a verified user with a blue checkmark next to their display name."
-msgstr ""
+msgid "An mockup of a iPhone showing the TISM app open to the profile of a verified user with a blue checkmark next to their display name."
+msgstr "An mockup of a iPhone showing the TISM app open to the profile of a verified user with a blue checkmark next to their display name."
 
 #: src/features/liveEvents/components/LiveEventFeedOptionsMenu.tsx:165
 msgid "An unknown error occurred."
@@ -1338,8 +1341,8 @@ msgid "Announcement"
 msgstr ""
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:39
-msgid "Announcing verification on Bluesky"
-msgstr ""
+msgid "Announcing verification on TISM"
+msgstr "Announcing verification on TISM"
 
 #: src/components/dialogs/PostInteractionSettingsDialog.tsx:457
 msgid "Anyone"
@@ -1351,7 +1354,7 @@ msgstr ""
 
 #: src/screens/Settings/ActivityPrivacySettings.tsx:112
 #: src/screens/Settings/ActivityPrivacySettings.tsx:117
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:163
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:165
 msgid "Anyone who follows me"
 msgstr ""
 
@@ -1741,76 +1744,6 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: src/components/dialogs/ServerInput.tsx:144
-#: src/components/dialogs/ServerInput.tsx:146
-msgid "Bluesky"
-msgstr ""
-
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:645
-msgid "Bluesky cannot confirm the authenticity of the claimed date."
-msgstr ""
-
-#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:165
-msgctxt "Name of app icon variant"
-msgid "Bluesky Classic™"
-msgstr ""
-
-#: src/components/contacts/screens/GetContacts.tsx:235
-msgid "Bluesky helps friends find each other by creating an encoded digital fingerprint, called a \"hash\", and then looking for matching hashes."
-msgstr ""
-
-#: src/components/dialogs/ServerInput.tsx:214
-msgid "Bluesky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
-msgstr ""
-
-#: src/components/dialogs/ServerInput.tsx:162
-msgid "Bluesky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Bluesky Social option."
-msgstr ""
-
-#: src/components/ProgressGuide/List.tsx:117
-msgid "Bluesky is better with friends!"
-msgstr ""
-
-#: src/screens/Onboarding/StepFindContactsIntro/index.tsx:43
-msgid "Bluesky is more fun with friends"
-msgstr ""
-
-#: src/components/dialogs/nuxs/FindContactsAnnouncement.tsx:107
-msgid "Bluesky is more fun with friends! Import your contacts to see who’s already here."
-msgstr ""
-
-#: src/components/contacts/screens/ViewMatches.tsx:315
-msgid "Bluesky is more fun with friends. Do you want to invite some of yours? <0/>"
-msgstr ""
-
-#: src/screens/Takendown.tsx:213
-msgid "Bluesky Social Terms of Service"
-msgstr ""
-
-#: src/screens/Settings/FindContactsSettings.tsx:549
-msgid "Bluesky stores your contacts as encoded data. Removing your contacts will immediately delete this data."
-msgstr ""
-
-#: src/components/StarterPack/ProfileStarterPacks.tsx:340
-msgid "Bluesky will choose a set of recommended accounts from people in your network."
-msgstr ""
-
-#: src/screens/Settings/components/PwiOptOut.tsx:100
-msgid "Bluesky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
-msgstr ""
-
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:134
-msgid "Bluesky will proactively verify notable and authentic accounts."
-msgstr ""
-
-#: src/screens/Settings/AppIconSettings/index.tsx:97
-msgid "Bluesky+"
-msgstr ""
-
-#: src/screens/Settings/AppIconSettings/index.tsx:100
-msgid "Bluesky+ icons"
-msgstr ""
-
 #: src/lib/moderation/useLabelBehaviorDescription.ts:56
 msgid "Blur images"
 msgstr ""
@@ -1902,7 +1835,7 @@ msgstr ""
 msgid "By clicking \"Continue\" you acknowledge that you understand and agree to these updates."
 msgstr ""
 
-#: src/components/contacts/screens/PhoneInput.tsx:297
+#: src/components/contacts/screens/PhoneInput.tsx:299
 msgid "By continuing, you consent to this use. You may change your mind any time by visiting settings. <0>Learn more</0>"
 msgstr ""
 
@@ -1953,7 +1886,7 @@ msgstr ""
 #: src/screens/Deactivated.tsx:150
 #: src/screens/Profile/Header/EditProfileDialog.tsx:215
 #: src/screens/Profile/Header/EditProfileDialog.tsx:223
-#: src/screens/Search/Shell.tsx:397
+#: src/screens/Search/Shell.tsx:399
 #: src/screens/Settings/AppIconSettings/index.tsx:42
 #: src/screens/Settings/AppIconSettings/index.tsx:228
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:80
@@ -1979,7 +1912,7 @@ msgstr ""
 msgid "Cancel reactivation and sign out"
 msgstr ""
 
-#: src/screens/Search/Shell.tsx:388
+#: src/screens/Search/Shell.tsx:390
 msgid "Cancel search"
 msgstr ""
 
@@ -2234,11 +2167,11 @@ msgstr ""
 msgid "Click here to contact our support team"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:263
+#: src/ageAssurance/components/NoAccessScreen.tsx:264
 msgid "Click here to delete your account"
 msgstr "Click here to delete your account"
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:254
+#: src/ageAssurance/components/NoAccessScreen.tsx:255
 msgid "Click here to log out"
 msgstr ""
 
@@ -2247,7 +2180,7 @@ msgid "Click here to restart the verification process."
 msgstr ""
 
 #: src/ageAssurance/components/NoAccessScreen.tsx:109
-#: src/ageAssurance/components/NoAccessScreen.tsx:231
+#: src/ageAssurance/components/NoAccessScreen.tsx:232
 msgid "Click here to update your birthdate"
 msgstr ""
 
@@ -2283,8 +2216,8 @@ msgstr ""
 #: src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:164
 #: src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:172
 #: src/components/dialogs/nuxs/DraftsAnnouncement.tsx:139
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:176
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:185
+#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:175
+#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:184
 #: src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:191
 #: src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:199
 #: src/components/dialogs/SearchablePeopleList.tsx:296
@@ -2298,11 +2231,11 @@ msgstr ""
 #: src/components/NewskieDialog.tsx:169
 #: src/components/NewskieDialog.tsx:175
 #: src/components/Post/Embed/VideoEmbed/GifPresentationControls.tsx:107
-#: src/components/ProgressGuide/FollowDialog.tsx:445
+#: src/components/ProgressGuide/FollowDialog.tsx:460
 #: src/components/StarterPack/Wizard/WizardEditListDialog.tsx:122
 #: src/components/StarterPack/Wizard/WizardEditListDialog.tsx:128
 #: src/components/verification/VerificationsDialog.tsx:146
-#: src/components/verification/VerifierDialog.tsx:146
+#: src/components/verification/VerifierDialog.tsx:145
 #: src/components/WhoCanReply.tsx:236
 #: src/components/WhoCanReply.tsx:243
 #: src/features/liveNow/components/EditLiveDialog.tsx:217
@@ -2334,7 +2267,7 @@ msgstr ""
 #: src/components/dialogs/LanguageSelectDialog.tsx:322
 #: src/components/dialogs/LanguageSelectDialog.tsx:354
 #: src/components/verification/VerificationsDialog.tsx:138
-#: src/components/verification/VerifierDialog.tsx:139
+#: src/components/verification/VerifierDialog.tsx:138
 msgid "Close dialog"
 msgstr ""
 
@@ -2472,7 +2405,7 @@ msgstr ""
 msgid "Confirm"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:397
+#: src/ageAssurance/components/NoAccessScreen.tsx:398
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:116
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:41
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:106
@@ -2499,7 +2432,7 @@ msgstr ""
 msgid "Connection issue"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:334
+#: src/ageAssurance/components/NoAccessScreen.tsx:335
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:159
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:31
 msgid "Contact our moderation team"
@@ -2953,8 +2886,8 @@ msgid "Customization options"
 msgstr ""
 
 #: src/screens/Onboarding/Layout.tsx:60
-msgid "Customizes your Bluesky experience"
-msgstr ""
+msgid "Customizes your Turtle Island experience"
+msgstr "Customizes your Turtle Island experience"
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:200
 msgid "Dangerous challenges or activities"
@@ -3002,7 +2935,7 @@ msgstr ""
 msgid "Deepfake adult content"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:156
+#: src/screens/Settings/AppearanceSettings.tsx:160
 msgid "Default"
 msgstr ""
 
@@ -3354,8 +3287,8 @@ msgstr ""
 #: src/components/dialogs/BirthDateSettings.tsx:195
 #: src/components/dialogs/BirthDateSettings.tsx:202
 #: src/components/dialogs/LanguageSelectDialog.tsx:327
-#: src/components/dialogs/ServerInput.tsx:237
-#: src/components/dialogs/ServerInput.tsx:239
+#: src/components/dialogs/ServerInput.tsx:238
+#: src/components/dialogs/ServerInput.tsx:240
 #: src/components/dms/AfterReportDialog.tsx:144
 #: src/components/forms/DateField/index.tsx:104
 #: src/components/forms/DateField/index.tsx:110
@@ -3389,10 +3322,6 @@ msgstr ""
 msgid "Double tap to like"
 msgstr ""
 
-#: src/screens/StarterPack/StarterPackLandingScreen.tsx:331
-msgid "Download Bluesky"
-msgstr ""
-
 #: src/screens/Settings/components/ExportCarDialog.tsx:115
 #: src/screens/Settings/components/ExportCarDialog.tsx:120
 msgid "Download CAR file"
@@ -3407,6 +3336,10 @@ msgstr ""
 #: src/view/com/lightbox/Lightbox.web.tsx:290
 msgid "Download image"
 msgstr "Download image"
+
+#: src/screens/StarterPack/StarterPackLandingScreen.tsx:331
+msgid "Download TISM"
+msgstr "Download TISM"
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:115
 msgid "Doxxing"
@@ -3424,12 +3357,20 @@ msgid "Drop to add images"
 msgstr ""
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:20
-msgid "Due to laws in your region, certain features on Bluesky are currently restricted until you're able to verify you're an adult."
-msgstr ""
+msgid "Due to laws in your region, certain features on Turtle Island are currently restricted until you're able to verify you're an adult."
+msgstr "Due to laws in your region, certain features on Turtle Island are currently restricted until you're able to verify you're an adult."
 
 #: src/components/dialogs/MutedWords.tsx:162
 msgid "Duration:"
 msgstr ""
+
+#: src/screens/Settings/AppearanceSettings.tsx:143
+msgid "Dyslexia"
+msgstr "Dyslexia"
+
+#: src/screens/Settings/AppearanceSettings.tsx:130
+msgid "Dyslexia-friendly font uses Lexend for improved readability."
+msgstr "Dyslexia-friendly font uses Lexend for improved readability."
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:237
 msgid "e.g. alice"
@@ -3481,7 +3422,7 @@ msgctxt "action"
 msgid "Edit"
 msgstr ""
 
-#: src/view/com/util/UserAvatar.tsx:442
+#: src/view/com/util/UserAvatar.tsx:499
 #: src/view/com/util/UserBanner.tsx:122
 msgid "Edit avatar"
 msgstr ""
@@ -3784,7 +3725,7 @@ msgstr ""
 msgid "Error loading post"
 msgstr ""
 
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:154
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:156
 msgid "Error loading preference"
 msgstr ""
 
@@ -3897,7 +3838,7 @@ msgid "Explicit sexual images."
 msgstr ""
 
 #: src/Navigation.tsx:818
-#: src/screens/Search/Shell.tsx:354
+#: src/screens/Search/Shell.tsx:356
 #: src/view/shell/desktop/LeftNav.tsx:691
 #: src/view/shell/Drawer.tsx:402
 msgid "Explore"
@@ -4342,14 +4283,14 @@ msgstr ""
 #. Starter packs suggested to the user for them to follow
 #: src/components/ProgressGuide/FollowDialog.tsx:72
 #: src/components/ProgressGuide/FollowDialog.tsx:80
-#: src/components/ProgressGuide/FollowDialog.tsx:431
+#: src/components/ProgressGuide/FollowDialog.tsx:446
 #: src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:43
 msgid "Find people to follow"
 msgstr ""
 
-#: src/screens/Search/Shell.tsx:530
-msgid "Find posts, users, and feeds on Bluesky"
-msgstr ""
+#: src/screens/Search/Shell.tsx:532
+msgid "Find posts, users, and feeds on Turtle Island"
+msgstr "Find posts, users, and feeds on Turtle Island"
 
 #: src/components/dialogs/nuxs/FindContactsAnnouncement.tsx:97
 msgid "Find your friends"
@@ -4357,8 +4298,8 @@ msgstr ""
 
 #: src/screens/Onboarding/StepFindContactsIntro/index.tsx:46
 #: src/screens/Settings/FindContactsSettings.tsx:126
-msgid "Find your friends on Bluesky by verifying your phone number and matching with your contacts. We protect your information and you control what happens next. <0>Learn more</0>"
-msgstr ""
+msgid "Find your friends on Turtle Island by verifying your phone number and matching with your contacts. We protect your information and you control what happens next. <0>Learn more</0>"
+msgstr "Find your friends on Turtle Island by verifying your phone number and matching with your contacts. We protect your information and you control what happens next. <0>Learn more</0>"
 
 #: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:21
 msgid "Find your people"
@@ -4555,7 +4496,7 @@ msgstr ""
 msgid "Font"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:148
+#: src/screens/Settings/AppearanceSettings.tsx:152
 msgid "Font size"
 msgstr ""
 
@@ -4575,10 +4516,7 @@ msgstr ""
 msgid "For security reasons, you won't be able to view this again. If you lose this app password, you'll need to generate a new one."
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:130
-msgid "For the best experience, we recommend using the theme font."
-msgstr ""
-
+#: src/components/ProgressGuide/FollowDialog.tsx:131
 #: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:346
 #: src/screens/Search/modules/ExploreSuggestedAccounts.tsx:88
 msgid "For You"
@@ -4935,8 +4873,8 @@ msgid "Having trouble?"
 msgstr ""
 
 #: src/components/contacts/screens/PhoneInput.tsx:290
-msgid "Held by Bluesky for 7 days to prevent abuse, then deleted"
-msgstr ""
+msgid "Held by Turtle Island for 7 days to prevent abuse, then deleted"
+msgstr "Held by Turtle Island for 7 days to prevent abuse, then deleted"
 
 #: src/screens/Settings/Settings.tsx:247
 #: src/screens/Settings/Settings.tsx:251
@@ -4963,7 +4901,7 @@ msgstr ""
 msgid "Hey there!"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:213
+#: src/ageAssurance/components/NoAccessScreen.tsx:214
 msgid "Hi there!"
 msgstr ""
 
@@ -5069,8 +5007,8 @@ msgstr ""
 msgid "Hide user list"
 msgstr ""
 
-#: src/screens/Moderation/VerificationSettings.tsx:88
-#: src/screens/Moderation/VerificationSettings.tsx:97
+#: src/screens/Moderation/VerificationSettings.tsx:87
+#: src/screens/Moderation/VerificationSettings.tsx:96
 msgid "Hide verification badges"
 msgstr ""
 
@@ -5154,8 +5092,8 @@ msgid "Human trafficking"
 msgstr ""
 
 #: src/components/contacts/screens/GetContacts.tsx:267
-msgid "I consent to Bluesky using my contacts for mutual friend discovery and to retain hashed data for matching until I opt out."
-msgstr ""
+msgid "I consent to TISM using my contacts for mutual friend discovery and to retain hashed data for matching until I opt out."
+msgstr "I consent to TISM using my contacts for mutual friend discovery and to retain hashed data for matching until I opt out."
 
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:134
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:137
@@ -5174,8 +5112,8 @@ msgstr ""
 
 #. placeholder {0}: currentAccount.handle
 #: src/components/contacts/screens/ViewMatches.tsx:578
-msgid "I'm on Bluesky as {0} - come find me! https://bsky.app/download"
-msgstr ""
+msgid "I'm on TISM as {0} - come find me! https://bsky.app/download"
+msgstr "I'm on TISM as {0} - come find me! https://bsky.app/download"
 
 #: src/view/com/lightbox/Lightbox.web.tsx:232
 msgid "If alt text is long, toggles alt text expanded state"
@@ -5317,7 +5255,7 @@ msgstr ""
 msgid "Imported on {0}"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:216
+#: src/ageAssurance/components/NoAccessScreen.tsx:217
 msgid "In order to provide an age-appropriate experience, we need to know your birthdate. This is a one-time thing, and your data will be kept private."
 msgstr ""
 
@@ -5426,8 +5364,8 @@ msgid "Invite"
 msgstr ""
 
 #: src/components/contacts/screens/ViewMatches.tsx:567
-msgid "Invite {name} to join Bluesky"
-msgstr ""
+msgid "Invite {name} to join TISM"
+msgstr "Invite {name} to join TISM"
 
 #: src/screens/Signup/StepInfo/index.tsx:190
 msgid "Invite code"
@@ -5458,7 +5396,7 @@ msgstr ""
 msgid "Invites, but personal"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:394
+#: src/ageAssurance/components/NoAccessScreen.tsx:395
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:113
 msgid "Is your location not accurate? <0>Tap here to confirm your location.</0> "
 msgstr "Is your location not accurate? <0>Tap here to confirm your location.</0> "
@@ -5485,22 +5423,22 @@ msgstr ""
 msgid "Job ID: {0}"
 msgstr ""
 
-#. Link to a page with job openings at Bluesky
+#. Link to a page with job openings at TISM
 #: src/view/com/auth/SplashScreen.web.tsx:185
 msgid "Jobs"
-msgstr ""
-
-#: src/screens/StarterPack/StarterPackLandingScreen.tsx:210
-#: src/screens/StarterPack/StarterPackLandingScreen.tsx:216
-#: src/screens/StarterPack/StarterPackScreen.tsx:478
-#: src/screens/StarterPack/StarterPackScreen.tsx:489
-msgid "Join Bluesky"
 msgstr ""
 
 #: src/components/StarterPack/QrCode.tsx:72
 #: src/view/shell/NavSignupCard.tsx:41
 msgid "Join the conversation"
 msgstr ""
+
+#: src/screens/StarterPack/StarterPackLandingScreen.tsx:210
+#: src/screens/StarterPack/StarterPackLandingScreen.tsx:216
+#: src/screens/StarterPack/StarterPackScreen.tsx:478
+#: src/screens/StarterPack/StarterPackScreen.tsx:489
+msgid "Join TISM"
+msgstr "Join TISM"
 
 #: src/lib/interests.ts:63
 msgid "Journalism"
@@ -5559,16 +5497,16 @@ msgstr ""
 msgid "Languages"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:160
+#: src/screens/Settings/AppearanceSettings.tsx:164
 msgid "Larger"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:377
+#: src/ageAssurance/components/NoAccessScreen.tsx:378
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:214
 msgid "Last initiated {timeAgo} ago"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:375
+#: src/ageAssurance/components/NoAccessScreen.tsx:376
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:212
 msgid "Last initiated just now"
 msgstr ""
@@ -5580,8 +5518,8 @@ msgid "Latest"
 msgstr ""
 
 #: src/components/verification/VerificationsDialog.tsx:168
-#: src/components/verification/VerifierDialog.tsx:135
-#: src/screens/Moderation/VerificationSettings.tsx:50
+#: src/components/verification/VerifierDialog.tsx:134
+#: src/screens/Moderation/VerificationSettings.tsx:49
 #: src/screens/Profile/Header/EditProfileDialog.tsx:346
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:215
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:279
@@ -5597,22 +5535,18 @@ msgstr ""
 msgid "Learn more about age assurance"
 msgstr ""
 
-#: src/view/com/auth/SplashScreen.web.tsx:173
-msgid "Learn more about Bluesky"
-msgstr ""
-
 #: src/components/contacts/components/InviteInfo.tsx:33
 msgid "Learn more about how inviting friends works"
 msgstr ""
 
-#: src/components/contacts/screens/PhoneInput.tsx:303
+#: src/components/contacts/screens/PhoneInput.tsx:305
 #: src/screens/Onboarding/StepFindContactsIntro/index.tsx:53
 #: src/screens/Settings/FindContactsSettings.tsx:133
 msgctxt "english-only-resource"
 msgid "Learn more about importing contacts"
 msgstr ""
 
-#: src/components/dialogs/ServerInput.tsx:220
+#: src/components/dialogs/ServerInput.tsx:221
 msgid "Learn more about self hosting your PDS."
 msgstr ""
 
@@ -5638,16 +5572,20 @@ msgstr ""
 msgid "Learn more about this warning"
 msgstr ""
 
+#: src/view/com/auth/SplashScreen.web.tsx:173
+msgid "Learn more about Turtle Island Social Media"
+msgstr "Learn more about Turtle Island Social Media"
+
 #: src/components/verification/VerificationsDialog.tsx:153
-#: src/components/verification/VerifierDialog.tsx:121
+#: src/components/verification/VerifierDialog.tsx:120
 msgctxt "english-only-resource"
-msgid "Learn more about verification on Bluesky"
-msgstr ""
+msgid "Learn more about verification on TISM"
+msgstr "Learn more about verification on TISM"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:128
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:131
-msgid "Learn more about what is public on Bluesky."
-msgstr ""
+msgid "Learn more about what is public on Turtle Island."
+msgstr "Learn more about what is public on Turtle Island."
 
 #: src/screens/Profile/components/GermButton.tsx:211
 msgid "Learn more about your Germ DM link"
@@ -5657,7 +5595,7 @@ msgstr ""
 msgid "Learn more in your <0>account settings.</0>"
 msgstr ""
 
-#: src/components/dialogs/ServerInput.tsx:222
+#: src/components/dialogs/ServerInput.tsx:223
 #: src/components/moderation/ContentHider.tsx:259
 msgid "Learn more."
 msgstr ""
@@ -5681,8 +5619,8 @@ msgstr ""
 
 #: src/components/dialogs/LinkWarning.tsx:83
 #: src/components/dialogs/LinkWarning.tsx:91
-msgid "Leaving Bluesky"
-msgstr ""
+msgid "Leaving Turtle Island"
+msgstr "Leaving Turtle Island"
 
 #: src/screens/SignupQueued.tsx:158
 msgid "left to go."
@@ -6567,8 +6505,8 @@ msgid "Next image"
 msgstr ""
 
 #: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:32
-msgid "No ads, no invasive tracking, no engagement traps. Bluesky respects your time and attention."
-msgstr ""
+msgid "No ads, no invasive tracking, no engagement traps. Turtle Island respects your time and attention."
+msgstr "No ads, no invasive tracking, no engagement traps. Turtle Island respects your time and attention."
 
 #: src/screens/Settings/AppPasswords.tsx:108
 msgid "No app passwords yet"
@@ -6662,7 +6600,7 @@ msgstr ""
 
 #: src/screens/Settings/ActivityPrivacySettings.tsx:130
 #: src/screens/Settings/ActivityPrivacySettings.tsx:135
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:160
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:162
 msgctxt "enable for"
 msgid "No one"
 msgstr ""
@@ -6699,7 +6637,7 @@ msgstr ""
 
 #: src/components/dialogs/SearchablePeopleList.tsx:224
 #: src/components/dms/InitiateChatFlow.tsx:334
-#: src/components/ProgressGuide/FollowDialog.tsx:209
+#: src/components/ProgressGuide/FollowDialog.tsx:221
 msgid "No results"
 msgstr ""
 
@@ -6801,13 +6739,13 @@ msgstr ""
 msgid "Note about sharing"
 msgstr ""
 
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:117
-msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
-msgstr ""
-
 #: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:135
 msgid "Note: This post is only visible to logged-in users."
 msgstr ""
+
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:117
+msgid "Note: Turtle Island is an open and public network. This setting only limits the visibility of your content on the TISM app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
+msgstr "Note: Turtle Island is an open and public network. This setting only limits the visibility of your content on the TISM app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
 
 #: src/screens/Messages/ChatList.tsx:309
 msgid "Nothing here"
@@ -6954,7 +6892,7 @@ msgstr ""
 
 #: src/screens/Settings/ActivityPrivacySettings.tsx:121
 #: src/screens/Settings/ActivityPrivacySettings.tsx:126
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:158
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:160
 msgid "Only followers who I follow"
 msgstr ""
 
@@ -7126,13 +7064,13 @@ msgstr ""
 
 #: src/view/com/auth/SplashScreen.tsx:102
 #: src/view/com/auth/SplashScreen.web.tsx:116
-msgid "Opens flow to create a new Bluesky account"
-msgstr ""
+msgid "Opens flow to create a new TISM account"
+msgstr "Opens flow to create a new TISM account"
 
 #: src/view/com/auth/SplashScreen.tsx:120
 #: src/view/com/auth/SplashScreen.web.tsx:130
-msgid "Opens flow to sign in to your existing Bluesky account"
-msgstr ""
+msgid "Opens flow to sign in to your existing TISM account"
+msgstr "Opens flow to sign in to your existing TISM account"
 
 #: src/view/com/composer/photos/SelectGifBtn.tsx:37
 msgid "Opens GIF select dialog"
@@ -7151,7 +7089,7 @@ msgstr ""
 msgid "Opens link {0}"
 msgstr ""
 
-#: src/view/com/util/UserAvatar.tsx:581
+#: src/view/com/util/UserAvatar.tsx:638
 msgid "Opens live status dialog"
 msgstr ""
 
@@ -7172,7 +7110,7 @@ msgid "Opens this draft in the composer"
 msgstr ""
 
 #: src/view/com/notifications/NotificationFeedItem.tsx:1021
-#: src/view/com/util/UserAvatar.tsx:599
+#: src/view/com/util/UserAvatar.tsx:656
 msgid "Opens this profile"
 msgstr ""
 
@@ -7252,8 +7190,8 @@ msgid "Our moderation team has received your report."
 msgstr ""
 
 #: src/screens/Messages/components/ChatDisabled.tsx:35
-msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
-msgstr ""
+msgid "Our moderators have reviewed reports and decided to disable your access to chats on TISM."
+msgstr "Our moderators have reviewed reports and decided to disable your access to chats on TISM."
 
 #: src/components/dialogs/StarterPackDialog.tsx:384
 msgid "Owner"
@@ -7465,8 +7403,8 @@ msgid "Please choose your password."
 msgstr ""
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:291
-msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Bluesky."
-msgstr ""
+msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Turtle Island."
+msgstr "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Turtle Island."
 
 #: src/screens/Signup/state.ts:309
 msgid "Please complete the verification captcha."
@@ -7971,8 +7909,8 @@ msgctxt "english-only-resource"
 msgid "read about how to use search filters"
 msgstr ""
 
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:160
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:171
+#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:159
+#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:170
 msgid "Read blog post"
 msgstr ""
 
@@ -7993,26 +7931,18 @@ msgid "Read our blog post"
 msgstr ""
 
 #: src/view/com/auth/SplashScreen.web.tsx:178
-msgid "Read the Bluesky blog"
-msgstr ""
+msgid "Read the TISM blog"
+msgstr "Read the TISM blog"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:53
 #: src/screens/Signup/StepInfo/Policies.tsx:79
-msgid "Read the Bluesky Privacy Policy"
-msgstr ""
+msgid "Read the TISM Privacy Policy"
+msgstr "Read the TISM Privacy Policy"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:46
 #: src/screens/Signup/StepInfo/Policies.tsx:66
-msgid "Read the Bluesky Terms of Service"
-msgstr ""
-
-#: src/components/WelcomeModal.tsx:149
-msgid "Real conversations."
-msgstr ""
-
-#: src/components/WelcomeModal.tsx:147
-msgid "Real people."
-msgstr ""
+msgid "Read the TISM Terms of Service"
+msgstr "Read the TISM Terms of Service"
 
 #: src/screens/Takendown.tsx:158
 #: src/screens/Takendown.tsx:166
@@ -8098,8 +8028,8 @@ msgstr ""
 msgid "Remove attachment"
 msgstr ""
 
-#: src/view/com/util/UserAvatar.tsx:501
-#: src/view/com/util/UserAvatar.tsx:504
+#: src/view/com/util/UserAvatar.tsx:558
+#: src/view/com/util/UserAvatar.tsx:561
 msgid "Remove Avatar"
 msgstr ""
 
@@ -8755,8 +8685,8 @@ msgstr ""
 #: src/components/dialogs/SearchablePeopleList.tsx:515
 #: src/components/forms/SearchInput.tsx:51
 #: src/components/forms/SearchInput.tsx:53
-#: src/screens/Search/Shell.tsx:354
-#: src/screens/Search/Shell.tsx:518
+#: src/screens/Search/Shell.tsx:356
+#: src/screens/Search/Shell.tsx:520
 #: src/view/shell/bottom-bar/BottomBar.tsx:199
 msgid "Search"
 msgstr ""
@@ -8768,7 +8698,7 @@ msgstr ""
 msgid "Search @{0}'s posts"
 msgstr ""
 
-#: src/components/ProgressGuide/FollowDialog.tsx:685
+#: src/components/ProgressGuide/FollowDialog.tsx:700
 msgid "Search by name or interest"
 msgstr ""
 
@@ -8781,12 +8711,12 @@ msgid "Search feeds"
 msgstr ""
 
 #. Accessibility label for a tab that searches for accounts in a category (e.g. Art, Video Games, Sports, etc.) that are suggested for the user to follow. The tab is not currently active and can be selected.
-#: src/components/ProgressGuide/FollowDialog.tsx:488
+#: src/components/ProgressGuide/FollowDialog.tsx:503
 msgid "Search for \"{interestsDisplayName}\""
 msgstr ""
 
 #. Accessibility label for a tab that searches for accounts in a category (e.g. Art, Video Games, Sports, etc.) that are suggested for the user to follow. The tab is currently selected.
-#: src/components/ProgressGuide/FollowDialog.tsx:483
+#: src/components/ProgressGuide/FollowDialog.tsx:498
 msgid "Search for \"{interestsDisplayName}\" (active)"
 msgstr ""
 
@@ -8810,7 +8740,7 @@ msgstr ""
 msgid "Search for people"
 msgstr "Search for people"
 
-#: src/screens/Search/Shell.tsx:380
+#: src/screens/Search/Shell.tsx:382
 msgid "Search for posts, users, or feeds"
 msgstr ""
 
@@ -8839,7 +8769,7 @@ msgstr ""
 
 #: src/components/dialogs/SearchablePeopleList.tsx:535
 #: src/components/dms/InitiateChatFlow.tsx:1002
-#: src/components/ProgressGuide/FollowDialog.tsx:704
+#: src/components/ProgressGuide/FollowDialog.tsx:719
 msgid "Search profiles"
 msgstr ""
 
@@ -8853,7 +8783,7 @@ msgstr ""
 
 #: src/components/dialogs/SearchablePeopleList.tsx:536
 #: src/components/dms/InitiateChatFlow.tsx:1003
-#: src/components/ProgressGuide/FollowDialog.tsx:705
+#: src/components/ProgressGuide/FollowDialog.tsx:720
 msgid "Searches for profiles"
 msgstr ""
 
@@ -8888,8 +8818,8 @@ msgid "See #{tag} posts by user"
 msgstr ""
 
 #: src/view/com/auth/SplashScreen.web.tsx:183
-msgid "See jobs at Bluesky"
-msgstr ""
+msgid "See jobs at TISM"
+msgstr "See jobs at TISM"
 
 #: src/components/FeedInterstitials.tsx:490
 #: src/components/FeedInterstitials.tsx:548
@@ -9168,7 +9098,7 @@ msgstr ""
 msgid "Set who can reply to your post"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:223
+#: src/ageAssurance/components/NoAccessScreen.tsx:224
 msgid "Set your birthdate below and we'll get you back to posting and exploring in no time!"
 msgstr ""
 
@@ -9299,8 +9229,8 @@ msgid "Share this starter pack"
 msgstr ""
 
 #: src/components/StarterPack/ShareDialog.tsx:86
-msgid "Share this starter pack and help people join your community on Bluesky."
-msgstr ""
+msgid "Share this starter pack and help people join your community on Turtle Island."
+msgstr "Share this starter pack and help people join your community on Turtle Island."
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:132
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:135
@@ -9500,8 +9430,8 @@ msgid "Sign in to account that is not listed"
 msgstr ""
 
 #: src/components/dialogs/Signin.tsx:47
-msgid "Sign in to Bluesky or create a new account"
-msgstr ""
+msgid "Sign in to TISM or create a new account"
+msgstr "Sign in to TISM or create a new account"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:571
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:573
@@ -9567,7 +9497,7 @@ msgstr ""
 msgid "Skip to next step"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:152
+#: src/screens/Settings/AppearanceSettings.tsx:156
 msgid "Smaller"
 msgstr ""
 
@@ -9580,8 +9510,8 @@ msgid "So many thoughts, you should post one"
 msgstr ""
 
 #: src/components/WelcomeModal.tsx:151
-msgid "Social media you control."
-msgstr ""
+msgid "Social media for all of us."
+msgstr "Social media for all of us."
 
 #: src/lib/interests.ts:58
 msgid "Software Dev"
@@ -9776,7 +9706,7 @@ msgstr ""
 msgid "Storage cleared, you need to restart the app now."
 msgstr ""
 
-#: src/components/contacts/screens/PhoneInput.tsx:294
+#: src/components/contacts/screens/PhoneInput.tsx:296
 msgid "Stored as part of a secure code for matching with others"
 msgstr ""
 
@@ -9786,8 +9716,8 @@ msgid "Storybook"
 msgstr ""
 
 #: src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:181
-msgid "Streaming on Twitch? Set your live status on Bluesky to add a badge to your avatar. Tapping it takes people straight to your stream."
-msgstr ""
+msgid "Streaming on Twitch? Set your live status on Turtle Island to add a badge to your avatar. Tapping it takes people straight to your stream."
+msgstr "Streaming on Twitch? Set your live status on Turtle Island to add a badge to your avatar. Tapping it takes people straight to your stream."
 
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:122
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:128
@@ -9929,8 +9859,8 @@ msgid "Tags only"
 msgstr ""
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:110
-msgid "Tap below to allow Bluesky to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
-msgstr ""
+msgid "Tap below to allow TISM to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
+msgstr "Tap below to allow TISM to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
 
 #: src/view/com/feeds/MissingFeed.tsx:90
 msgid "Tap for information"
@@ -9945,8 +9875,8 @@ msgid "Tap here to confirm your location with GPS."
 msgstr ""
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:165
-msgid "Tap to acknowledge that you understand and agree to these updates and continue using Bluesky"
-msgstr ""
+msgid "Tap to acknowledge that you understand and agree to these updates and continue using Turtle Island"
+msgstr "Tap to acknowledge that you understand and agree to these updates and continue using Turtle Island"
 
 #: src/components/ContextMenu/Backdrop.ios.tsx:54
 #: src/components/ContextMenu/Backdrop.ios.tsx:80
@@ -10025,7 +9955,7 @@ msgstr ""
 msgid "Thanks, you have successfully verified your email address. You can close this dialog."
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:423
+#: src/ageAssurance/components/NoAccessScreen.tsx:424
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:142
 msgid "Thanks! You're all set."
 msgstr ""
@@ -10075,10 +10005,6 @@ msgstr ""
 msgid "The birthdate you've entered means you are under 18 years old. Certain content and features may be unavailable to you."
 msgstr ""
 
-#: src/screens/Moderation/index.tsx:424
-msgid "The Bluesky web application"
-msgstr ""
-
 #: src/view/screens/CommunityGuidelines.tsx:42
 msgid "The Community Guidelines have been moved to <0/>"
 msgstr ""
@@ -10096,8 +10022,8 @@ msgid "The Discover feed now knows what you like"
 msgstr ""
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:334
-msgid "The experience is better in the app. Download Bluesky now and we'll pick back up where you left off."
-msgstr ""
+msgid "The experience is better in the app. Download TISM now and we'll pick back up where you left off."
+msgstr "The experience is better in the app. Download TISM now and we'll pick back up where you left off."
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:70
 msgid "The feed has been replaced with Discover."
@@ -10156,6 +10082,10 @@ msgstr ""
 #: src/view/screens/TermsOfService.tsx:39
 msgid "The Terms of Service have been moved to"
 msgstr ""
+
+#: src/screens/Moderation/index.tsx:424
+msgid "The TISM web application"
+msgstr "The TISM web application"
 
 #: src/components/intents/VerifyEmailIntentDialog.tsx:89
 msgid "The verification code you have provided is invalid. Please make sure that you have used the correct verification link or request a new one."
@@ -10275,8 +10205,8 @@ msgid "There was an unexpected issue in the application. Please let us know if t
 msgstr ""
 
 #: src/screens/SignupQueued.tsx:133
-msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
-msgstr ""
+msgid "There's been a rush of new users to Turtle Island! We'll activate your account as soon as we can."
+msgstr "There's been a rush of new users to Turtle Island! We'll activate your account as soon as we can."
 
 #: src/components/dialogs/PostInteractionSettingsDialog.tsx:660
 msgid "These are your default settings"
@@ -10320,8 +10250,8 @@ msgstr ""
 
 #: src/features/liveNow/components/GoLiveDisabledDialog.tsx:114
 #: src/screens/Messages/components/ChatDisabled.tsx:119
-msgid "This appeal will be sent to Bluesky's moderation service."
-msgstr ""
+msgid "This appeal will be sent to TISM's moderation service."
+msgstr "This appeal will be sent to TISM's moderation service."
 
 #: src/screens/PostThread/components/ThreadItemAnchorNoUnauthenticated.tsx:27
 #: src/screens/PostThread/components/ThreadItemPostNoUnauthenticated.tsx:47
@@ -10329,8 +10259,8 @@ msgid "This author has chosen to make their posts visible only to people who are
 msgstr ""
 
 #: src/screens/Profile/components/GermButton.tsx:243
-msgid "This button lets others open the Germ DM app to send you a message. You can manage its visibility from the Germ DM app, or you can disconnect your Bluesky account from Germ DM altogether by clicking the button below."
-msgstr ""
+msgid "This button lets others open the Germ DM app to send you a message. You can manage its visibility from the Germ DM app, or you can disconnect your TISM account from Germ DM altogether by clicking the button below."
+msgstr "This button lets others open the Germ DM app to send you a message. You can manage its visibility from the Germ DM app, or you can disconnect your TISM account from Germ DM altogether by clicking the button below."
 
 #: src/screens/Messages/components/MessageListError.tsx:18
 msgid "This chat was disconnected"
@@ -10363,8 +10293,8 @@ msgid "This content is not available because one of the users involved has block
 msgstr ""
 
 #: src/view/com/posts/PostFeedErrorMessage.tsx:122
-msgid "This content is not viewable without a Bluesky account."
-msgstr ""
+msgid "This content is not viewable without a TISM account."
+msgstr "This content is not viewable without a TISM account."
 
 #: src/screens/Messages/components/ChatListItem.tsx:362
 msgid "This conversation is with a deleted or a deactivated account. Press for options"
@@ -10455,12 +10385,12 @@ msgstr ""
 
 #. placeholder {0}: sanitizeHandle(list.creator.handle, '@')
 #: src/screens/List/ListHiddenScreen.tsx:155
-msgid "This list – created by <0>{0}</0> – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr ""
+msgid "This list – created by <0>{0}</0> – contains possible violations of Turtle Island's community guidelines in its name or description."
+msgstr "This list – created by <0>{0}</0> – contains possible violations of Turtle Island's community guidelines in its name or description."
 
 #: src/screens/List/ListHiddenScreen.tsx:150
-msgid "This list – created by you – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr ""
+msgid "This list – created by you – contains possible violations of Turtle Island's community guidelines in its name or description."
+msgstr "This list – created by you – contains possible violations of Turtle Island's community guidelines in its name or description."
 
 #: src/screens/ProfileList/AboutSection.tsx:100
 msgid "This list is empty."
@@ -10473,8 +10403,8 @@ msgstr ""
 #. placeholder {0}: niceDate(i18n, createdAt)
 #. placeholder {1}: niceDate(i18n, indexedAt)
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:632
-msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
-msgstr ""
+msgid "This post claims to have been created on <0>{0}</0>, but was first seen by TISM on <1>{1}</1>."
+msgstr "This post claims to have been created on <0>{0}</0>, but was first seen by TISM on <1>{1}</1>."
 
 #: src/components/WhoCanReply.tsx:274
 msgid "This post has an unknown type of threadgate on it. Your app may be out of date."
@@ -10569,8 +10499,8 @@ msgid "This will delete \"{0}\" from your muted words. You can always add it bac
 msgstr ""
 
 #: src/screens/Settings/components/DeleteAccountDialog.tsx:337
-msgid "This will irreversibly delete your Bluesky account <0>{currentHandle}</0> and all associated data. Note that this will affect any other <1>AT Protocol</1> services you use with this account."
-msgstr ""
+msgid "This will irreversibly delete your Turtle Island account <0>{currentHandle}</0> and all associated data. Note that this will affect any other <1>AT Protocol</1> services you use with this account."
+msgstr "This will irreversibly delete your Turtle Island account <0>{currentHandle}</0> and all associated data. Note that this will affect any other <1>AT Protocol</1> services you use with this account."
 
 #. placeholder {0}: account.handle
 #: src/screens/Settings/Settings.tsx:668
@@ -10613,6 +10543,64 @@ msgstr ""
 msgid "Time remaining: {0, plural, one {# second} other {# seconds}}"
 msgstr ""
 
+#: src/components/dialogs/ServerInput.tsx:144
+#: src/components/dialogs/ServerInput.tsx:146
+msgid "TISM"
+msgstr "TISM"
+
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:645
+msgid "TISM cannot confirm the authenticity of the claimed date."
+msgstr "TISM cannot confirm the authenticity of the claimed date."
+
+#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:165
+msgctxt "Name of app icon variant"
+msgid "TISM Classic™"
+msgstr "TISM Classic™"
+
+#: src/components/contacts/screens/GetContacts.tsx:235
+msgid "TISM helps friends find each other by creating an encoded digital fingerprint, called a \"hash\", and then looking for matching hashes."
+msgstr "TISM helps friends find each other by creating an encoded digital fingerprint, called a \"hash\", and then looking for matching hashes."
+
+#: src/components/ProgressGuide/List.tsx:117
+msgid "TISM is better with friends!"
+msgstr "TISM is better with friends!"
+
+#: src/components/dialogs/nuxs/FindContactsAnnouncement.tsx:107
+msgid "TISM is more fun with friends! Import your contacts to see who’s already here."
+msgstr "TISM is more fun with friends! Import your contacts to see who’s already here."
+
+#: src/components/contacts/screens/ViewMatches.tsx:315
+msgid "TISM is more fun with friends. Do you want to invite some of yours? <0/>"
+msgstr "TISM is more fun with friends. Do you want to invite some of yours? <0/>"
+
+#: src/screens/Settings/FindContactsSettings.tsx:549
+msgid "TISM stores your contacts as encoded data. Removing your contacts will immediately delete this data."
+msgstr "TISM stores your contacts as encoded data. Removing your contacts will immediately delete this data."
+
+#: src/screens/Takendown.tsx:213
+msgid "TISM Terms of Service"
+msgstr "TISM Terms of Service"
+
+#: src/components/StarterPack/ProfileStarterPacks.tsx:340
+msgid "TISM will choose a set of recommended accounts from people in your network."
+msgstr "TISM will choose a set of recommended accounts from people in your network."
+
+#: src/screens/Settings/components/PwiOptOut.tsx:100
+msgid "TISM will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
+msgstr "TISM will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
+
+#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:134
+msgid "TISM will proactively verify notable and authentic accounts."
+msgstr "TISM will proactively verify notable and authentic accounts."
+
+#: src/screens/Settings/AppIconSettings/index.tsx:97
+msgid "TISM+"
+msgstr "TISM+"
+
+#: src/screens/Settings/AppIconSettings/index.tsx:100
+msgid "TISM+ icons"
+msgstr "TISM+ icons"
+
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:100
 msgid "To disable the email 2FA method, please verify your access to the email address."
 msgstr ""
@@ -10623,7 +10611,7 @@ msgstr ""
 msgid "To disable your email 2FA method, please verify your access to <0>{0}</0>"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:251
+#: src/ageAssurance/components/NoAccessScreen.tsx:252
 msgid "To log out, <0>click here</0>. Or if you’d prefer, you can <1>delete your account</1>."
 msgstr "To log out, <0>click here</0>. Or if you’d prefer, you can <1>delete your account</1>."
 
@@ -10719,7 +10707,7 @@ msgstr ""
 msgid "Trolling"
 msgstr ""
 
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:140
+#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:139
 msgid "Trust emerges from relationships, communities, and shared context, so we’re also enabling <0>trusted verifiers</0>: organizations that can directly issue verification."
 msgstr ""
 
@@ -10738,6 +10726,22 @@ msgstr ""
 msgid "Try Google Translate"
 msgstr "Try Google Translate"
 
+#: src/components/dialogs/ServerInput.tsx:214
+msgid "Turtle Island is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
+msgstr "Turtle Island is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
+
+#: src/components/dialogs/ServerInput.tsx:162
+msgid "Turtle Island is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default TISM option."
+msgstr "Turtle Island is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default TISM option."
+
+#: src/screens/Onboarding/StepFindContactsIntro/index.tsx:43
+msgid "Turtle Island is more fun with friends"
+msgstr "Turtle Island is more fun with friends"
+
+#: src/components/WelcomeModal.tsx:147
+msgid "Turtle Island."
+msgstr "Turtle Island."
+
 #: src/lib/interests.ts:74
 msgid "TV"
 msgstr ""
@@ -10755,8 +10759,8 @@ msgid "Type:"
 msgstr ""
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:86
-msgid "Unable to access location. You'll need to visit your system settings to enable location services for Bluesky."
-msgstr ""
+msgid "Unable to access location. You'll need to visit your system settings to enable location services for TISM."
+msgstr "Unable to access location. You'll need to visit your system settings to enable location services for TISM."
 
 #: src/lib/hooks/useCleanError.ts:27
 #: src/lib/strings/errors.ts:12
@@ -10881,13 +10885,13 @@ msgstr ""
 msgid "Unfortunately, none of your subscribed labelers supports this report type."
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:200
-msgid "Unfortunately, the birthdate you have saved to your profile makes you too young to access Bluesky."
-msgstr ""
+#: src/ageAssurance/components/NoAccessScreen.tsx:201
+msgid "Unfortunately, the birthdate you have saved to your profile makes you too young to access Turtle Island."
+msgstr "Unfortunately, the birthdate you have saved to your profile makes you too young to access Turtle Island."
 
 #: src/ageAssurance/components/NoAccessScreen.tsx:185
-msgid "Unfortunately, your declared age indicates that you are not old enough to access Bluesky in your region."
-msgstr ""
+msgid "Unfortunately, your declared age indicates that you are not old enough to access Turtle Island in your region."
+msgstr "Unfortunately, your declared age indicates that you are not old enough to access Turtle Island in your region."
 
 #: src/components/verification/VerificationsDialog.tsx:209
 msgid "Unknown verifier"
@@ -11066,20 +11070,20 @@ msgstr ""
 msgid "Upload a text file to:"
 msgstr ""
 
-#: src/view/com/util/UserAvatar.tsx:472
-#: src/view/com/util/UserAvatar.tsx:475
+#: src/view/com/util/UserAvatar.tsx:529
+#: src/view/com/util/UserAvatar.tsx:532
 #: src/view/com/util/UserBanner.tsx:160
 #: src/view/com/util/UserBanner.tsx:163
 msgid "Upload from Camera"
 msgstr ""
 
-#: src/view/com/util/UserAvatar.tsx:489
+#: src/view/com/util/UserAvatar.tsx:546
 #: src/view/com/util/UserBanner.tsx:177
 msgid "Upload from Files"
 msgstr ""
 
-#: src/view/com/util/UserAvatar.tsx:483
-#: src/view/com/util/UserAvatar.tsx:487
+#: src/view/com/util/UserAvatar.tsx:540
+#: src/view/com/util/UserAvatar.tsx:544
 #: src/view/com/util/UserBanner.tsx:171
 #: src/view/com/util/UserBanner.tsx:175
 msgid "Upload from Library"
@@ -11103,8 +11107,8 @@ msgid "Uploading video..."
 msgstr ""
 
 #: src/screens/Settings/AppPasswords.tsx:67
-msgid "Use app passwords to sign in to other Bluesky clients without giving full access to your account or password."
-msgstr ""
+msgid "Use app passwords to sign in to other Turtle Island clients without giving full access to your account or password."
+msgstr "Use app passwords to sign in to other Turtle Island clients without giving full access to your account or password."
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:576
 msgid "Use default provider"
@@ -11134,8 +11138,8 @@ msgid "Use this to sign in to the other app along with your handle."
 msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:278
-msgid "Use your account email address, or another real email address you control, in case KWS or Bluesky needs to contact you."
-msgstr ""
+msgid "Use your account email address, or another real email address you control, in case KWS or Turtle Island needs to contact you."
+msgstr "Use your account email address, or another real email address you control, in case KWS or Turtle Island needs to contact you."
 
 #: src/components/dms/AfterReportDialog.tsx:154
 msgctxt "toast"
@@ -11241,8 +11245,8 @@ msgid "Verification Settings"
 msgstr ""
 
 #: src/screens/Moderation/VerificationSettings.tsx:43
-msgid "Verifications on Bluesky work differently than on other platforms. <0>Learn more here.</0>"
-msgstr ""
+msgid "Verifications on TISM work differently than on other platforms. <0>Learn more here.</0>"
+msgstr "Verifications on TISM work differently than on other platforms. <0>Learn more here.</0>"
 
 #: src/components/verification/VerificationsDialog.tsx:105
 msgid "Verified by:"
@@ -11255,7 +11259,7 @@ msgstr ""
 msgid "Verify account"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:360
+#: src/ageAssurance/components/NoAccessScreen.tsx:361
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:197
 msgid "Verify again"
 msgstr ""
@@ -11282,8 +11286,8 @@ msgstr ""
 msgid "Verify email dialog"
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:348
-#: src/ageAssurance/components/NoAccessScreen.tsx:362
+#: src/ageAssurance/components/NoAccessScreen.tsx:349
+#: src/ageAssurance/components/NoAccessScreen.tsx:363
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:185
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:199
 msgid "Verify now"
@@ -11608,8 +11612,8 @@ msgid "We estimate {estimatedTime} until your account is ready."
 msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:197
-msgid "We have partnered with <0>KWS</0> to handle age verification. When you click \"Begin\" below, KWS will email you instructions to complete the verification process. If your email address has already been used to verify your age for another game or service that uses KWS, you won’t need to do it again. When you’re done, you'll be brought back to continue using Bluesky."
-msgstr ""
+msgid "We have partnered with <0>KWS</0> to handle age verification. When you click \"Begin\" below, KWS will email you instructions to complete the verification process. If your email address has already been used to verify your age for another game or service that uses KWS, you won’t need to do it again. When you’re done, you’ll be brought back to continue using Turtle Island."
+msgstr "We have partnered with <0>KWS</0> to handle age verification. When you click \"Begin\" below, KWS will email you instructions to complete the verification process. If your email address has already been used to verify your age for another game or service that uses KWS, you won’t need to do it again. When you’re done, you’ll be brought back to continue using Turtle Island."
 
 #. placeholder {0}: currentAccount?.email
 #: src/components/intents/VerifyEmailIntentDialog.tsx:102
@@ -11697,7 +11701,7 @@ msgid "We're having issues initializing the age assurance process for your accou
 msgstr ""
 
 #: src/components/dialogs/SearchablePeopleList.tsx:108
-#: src/components/ProgressGuide/FollowDialog.tsx:183
+#: src/components/ProgressGuide/FollowDialog.tsx:195
 msgid "We're having network issues, try again"
 msgstr ""
 
@@ -11706,14 +11710,14 @@ msgid "We’re having network issues, try again"
 msgstr "We’re having network issues, try again"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:96
-msgid "We’re introducing a new layer of verification on Bluesky — an easy-to-see checkmark."
-msgstr ""
+msgid "We’re introducing a new layer of verification on TISM — an easy-to-see checkmark."
+msgstr "We’re introducing a new layer of verification on TISM — an easy-to-see checkmark."
 
 #: src/screens/Signup/index.tsx:136
 msgid "We’re so excited to have you join us!"
 msgstr "We’re so excited to have you join us!"
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:416
+#: src/ageAssurance/components/NoAccessScreen.tsx:417
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:135
 msgid "We're sorry, but based on your device's location, you are currently located in a region that requires age assurance."
 msgstr ""
@@ -11791,7 +11795,7 @@ msgstr ""
 msgid "What's up?"
 msgstr ""
 
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:148
+#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:147
 msgid "When you tap on a check, you’ll see which organizations have granted verification."
 msgstr ""
 
@@ -11937,8 +11941,8 @@ msgid "You are a trusted verifier"
 msgstr ""
 
 #: src/ageAssurance/components/NoAccessScreen.tsx:176
-msgid "You are accessing Bluesky from a region that legally requires us to verify your age before allowing you to access the app."
-msgstr ""
+msgid "You are accessing Turtle Island from a region that legally requires us to verify your age before allowing you to access the app."
+msgstr "You are accessing Turtle Island from a region that legally requires us to verify your age before allowing you to access the app."
 
 #: src/components/forms/HostingProvider.tsx:46
 msgid "You are creating an account on"
@@ -11948,10 +11952,10 @@ msgstr ""
 msgid "You are currently blocked from using the Go Live feature. To appeal this moderation decision, please submit the form below."
 msgstr ""
 
-#: src/ageAssurance/components/NoAccessScreen.tsx:330
+#: src/ageAssurance/components/NoAccessScreen.tsx:331
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:155
-msgid "You are currently unable to access Bluesky's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
-msgstr ""
+msgid "You are currently unable to access Turtle Island's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
+msgstr "You are currently unable to access Turtle Island's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
 
 #: src/screens/SignupQueued.tsx:160
 msgid "You are in line."
@@ -11995,8 +11999,8 @@ msgid "You can adjust your interests at any time from \"Content and media\" sett
 msgstr ""
 
 #: src/screens/Settings/components/DeleteAccountDialog.tsx:214
-msgid "You can also <0>temporarily deactivate</0> your account instead. Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."
-msgstr ""
+msgid "You can also <0>temporarily deactivate</0> your account instead. Your profile, posts, feeds, and lists will no longer be visible to other Turtle Island users. You can reactivate your account at any time by logging in."
+msgstr "You can also <0>temporarily deactivate</0> your account instead. Your profile, posts, feeds, and lists will no longer be visible to other Turtle Island users. You can reactivate your account at any time by logging in."
 
 #: src/view/com/posts/FollowingEmptyState.tsx:63
 #: src/view/com/posts/FollowingEndOfFeed.tsx:64
@@ -12101,8 +12105,8 @@ msgid "You have blocked this user. You cannot view their content."
 msgstr ""
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:17
-msgid "You have completed the Age Assurance process, but based on the results, we cannot be sure that you are 18 years of age or older. Due to laws in your region, certain features on Bluesky must remain restricted until you're able to verify you're an adult."
-msgstr ""
+msgid "You have completed the Age Assurance process, but based on the results, we cannot be sure that you are 18 years of age or older. Due to laws in your region, certain features on Turtle Island must remain restricted until you're able to verify you're an adult."
+msgstr "You have completed the Age Assurance process, but based on the results, we cannot be sure that you are 18 years of age or older. Due to laws in your region, certain features on Turtle Island must remain restricted until you're able to verify you're an adult."
 
 #: src/view/screens/Notifications.tsx:298
 msgid "You have completely disabled reply, quote, and mention notifications, so this tab will no longer update. To adjust this, visit your <0>notification settings</0>."
@@ -12202,12 +12206,12 @@ msgid "You initiated this flow already, {0} ago. It may take up to 5 minutes for
 msgstr ""
 
 #: src/components/NewskieDialog.tsx:107
-msgid "You joined Bluesky {timeAgoString} ago"
-msgstr ""
+msgid "You joined Turtle Island {timeAgoString} ago"
+msgstr "You joined Turtle Island {timeAgoString} ago"
 
 #: src/components/NewskieDialog.tsx:104
-msgid "You joined Bluesky using a starter pack {timeAgoString} ago"
-msgstr ""
+msgid "You joined Turtle Island using a starter pack {timeAgoString} ago"
+msgstr "You joined Turtle Island using a starter pack {timeAgoString} ago"
 
 #: src/components/moderation/LabelsOnMeDialog.tsx:84
 msgid "You may appeal non-self labels if you feel they were placed in error."
@@ -12226,8 +12230,8 @@ msgid "You may only add up to 3 feeds"
 msgstr ""
 
 #: src/components/dialogs/BirthDateSettings.tsx:177
-msgid "You must be at least 13 years old to use Bluesky. Read our <0>Terms of Service</0> for more information."
-msgstr ""
+msgid "You must be at least 13 years old to use Turtle Island. Read our <0>Terms of Service</0> for more information."
+msgstr "You must be at least 13 years old to use Turtle Island. Read our <0>Terms of Service</0> for more information."
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:365
 msgid "You must be following at least seven other people to generate a starter pack."
@@ -12323,8 +12327,8 @@ msgid "You'll follow these people right away"
 msgstr ""
 
 #: src/components/contacts/screens/GetContacts.tsx:314
-msgid "You'll need to go to the System Settings for Bluesky and give permission if you want to use this feature."
-msgstr ""
+msgid "You'll need to go to the System Settings for TISM and give permission if you want to use this feature."
+msgstr "You'll need to go to the System Settings for TISM and give permission if you want to use this feature."
 
 #. placeholder {0}: sanitizeHandle(profile.handle, '@')
 #: src/components/activity-notifications/SubscribeProfileDialog.tsx:172
@@ -12414,8 +12418,8 @@ msgid "Your account repository, containing all public data records, can be downl
 msgstr ""
 
 #: src/screens/Takendown.tsx:210
-msgid "Your account was found to be in violation of the <0>Bluesky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
-msgstr ""
+msgid "Your account was found to be in violation of the <0>TISM Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
+msgstr "Your account was found to be in violation of the <0>TISM Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
 
 #: src/screens/Takendown.tsx:150
 msgid "Your appeal has been submitted. If your appeal succeeds, you will receive an email."
@@ -12437,13 +12441,17 @@ msgstr ""
 msgid "Your choice will be remembered for future links. You can change it at any time in settings."
 msgstr ""
 
+#: src/components/WelcomeModal.tsx:149
+msgid "Your community."
+msgstr "Your community."
+
 #: src/view/com/notifications/NotificationFeedItem.tsx:367
-msgid "Your contact {firstAuthorLink} is on Bluesky"
-msgstr ""
+msgid "Your contact {firstAuthorLink} is on TISM"
+msgstr "Your contact {firstAuthorLink} is on TISM"
 
 #: src/view/com/notifications/NotificationFeedItem.tsx:365
-msgid "Your contact {firstAuthorName} is on Bluesky"
-msgstr ""
+msgid "Your contact {firstAuthorName} is on TISM"
+msgstr "Your contact {firstAuthorName} is on TISM"
 
 #: src/components/contacts/screens/ViewMatches.tsx:454
 msgid "Your contact {name}"
@@ -12472,8 +12480,8 @@ msgid "Your email appears to be invalid."
 msgstr ""
 
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:66
-msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Bluesky."
-msgstr ""
+msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Turtle Island."
+msgstr "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Turtle Island."
 
 #: src/state/shell/progress-guide.tsx:216
 msgid "Your first like!"
@@ -12522,8 +12530,8 @@ msgid "Your muted words"
 msgstr ""
 
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:72
-msgid "Your password has been changed successfully! Please use your new password when you sign in to Bluesky from now on."
-msgstr ""
+msgid "Your password has been changed successfully! Please use your new password when you sign in to TISM from now on."
+msgstr "Your password has been changed successfully! Please use your new password when you sign in to TISM from now on."
 
 #: src/screens/Signup/StepInfo/index.tsx:157
 msgid "Your password must be at least 8 characters long."
@@ -12551,8 +12559,8 @@ msgid "Your profile picture surrounded by concentric circles of other users' pro
 msgstr ""
 
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:75
-msgid "Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."
-msgstr ""
+msgid "Your profile, posts, feeds, and lists will no longer be visible to other Turtle Island users. You can reactivate your account at any time by logging in."
+msgstr "Your profile, posts, feeds, and lists will no longer be visible to other Turtle Island users. You can reactivate your account at any time by logging in."
 
 #: src/view/com/composer/Composer.tsx:984
 msgid "Your reply was sent"
