@@ -27,28 +27,28 @@ export function Content({state}: {state: PolicyUpdateState}) {
   const links = {
     terms: {
       overridePresentation: false,
-      to: `https://bsky.social/about/support/tos`,
+      to: `https://tism.social/tos`,
       label: _(msg`Terms of Service`),
     },
     privacy: {
       overridePresentation: false,
-      to: `https://bsky.social/about/support/privacy-policy`,
+      to: `https://tism.social/privacy`,
       label: _(msg`Privacy Policy`),
     },
     copyright: {
       overridePresentation: false,
-      to: `https://bsky.social/about/support/copyright`,
+      to: `https://tism.social/tos`,
       label: _(msg`Copyright Policy`),
     },
     guidelines: {
       overridePresentation: false,
-      to: `https://bsky.social/about/support/community-guidelines`,
+      to: `https://tism.social/community-guidelines`,
       label: _(msg`Community Guidelines`),
     },
     blog: {
       overridePresentation: false,
-      to: `https://bsky.social/about/blog/08-14-2025-updated-terms-and-policies`,
-      label: _(msg`Our blog post`),
+      to: `https://tism.social/about`,
+      label: _(msg`About TISM`),
     },
   }
   const linkButtonStyles = {
