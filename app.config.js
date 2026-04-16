@@ -46,7 +46,7 @@ module.exports = function (_config) {
       name: 'TISM',
       slug: 'tism',
       scheme: 'tism',
-      owner: 'omegcrash',
+      owner: 'tism',
       runtimeVersion: {
         policy: 'appVersion',
       },
@@ -452,7 +452,7 @@ module.exports = function (_config) {
               },
             },
           },
-          projectId: '55bd077a-d905-4184-9c7f-94789ba0f302',
+          projectId: 'f29b386f-4fad-4f75-81f5-d6358d132227',
         },
       },
     },
