@@ -14,28 +14,23 @@
       "distribution": "internal",
       "channel": "development",
       "ios": {
-        "simulator": true,
-        "resourceClass": "large"
+        "simulator": true
       },
       "env": {
-        "EXPO_PUBLIC_ENV": "production"
+        "EXPO_PUBLIC_ENV": "development"
       }
     },
     "preview": {
       "extends": "base",
       "distribution": "internal",
-      "channel": "production",
-      "ios": {
-        "resourceClass": "large"
-      },
+      "channel": "preview",
       "env": {
-        "EXPO_PUBLIC_ENV": "production"
+        "EXPO_PUBLIC_ENV": "staging"
       }
     },
     "production": {
       "extends": "base",
       "ios": {
-        "resourceClass": "large",
         "autoIncrement": true,
         "buildArtifactPaths": ["ios/build/*"]
       },
@@ -75,27 +70,15 @@
       "env": {
         "EXPO_PUBLIC_ENV": "testflight"
       }
-    },
-    "testflight-android": {
-      "extends": "base",
-      "distribution": "internal",
-      "ios": {
-        "autoIncrement": true,
-        "buildArtifactPaths": ["ios/build/*"]
-      },
-      "android": {
-        "autoIncrement": true
-      },
-      "channel": "testflight",
-      "env": {
-        "EXPO_PUBLIC_ENV": "testflight"
-      }
     }
   },
   "submit": {
     "production": {
       "ios": {
-        "ascAppId": "6444370199"
+        "ascAppId": "TODO_TISM_APP_ID"
+      },
+      "android": {
+        "track": "internal"
       }
     }
   }
