@@ -1,38 +1,26 @@
 {
   "project_info": {
+    "project_number": "1024170536799",
     "project_id": "tism-social",
-    "project_number": "100000000000",
-    "firebase_url": "https://tism-social.firebaseio.com"
+    "storage_bucket": "tism-social.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:123456789000:android:f1bf012572b04063",
+        "mobilesdk_app_id": "1:1024170536799:android:17e13f10f48beb335950ea",
         "android_client_info": {
           "package_name": "social.tism.app"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "123456789000.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "123456789000"
+          "current_key": "AIzaSyBsgk5rOwZYnaui4NhFWjBBDALUE0KtIvc"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
           "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }
