@@ -6,7 +6,10 @@
   },
   "build": {
     "base": {
-      "node": "20.19.4"
+      "node": "20.19.4",
+      "env": {
+        "GOOGLE_SERVICES_JSON": "@GOOGLE_SERVICES_JSON"
+      }
     },
     "development": {
       "extends": "base",
