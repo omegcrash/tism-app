@@ -141,9 +141,9 @@ function DialogInner({
           <SegmentedControl.Item
             testID="bskyServiceSelectBtn"
             value={BSKY_SERVICE}
-            label={_(msg`Bluesky`)}>
+            label={_(msg`TISM`)}>
             <SegmentedControl.ItemText>
-              {_(msg`Bluesky`)}
+              {_(msg`TISM`)}
             </SegmentedControl.ItemText>
           </SegmentedControl.Item>
           <SegmentedControl.Item
@@ -160,9 +160,9 @@ function DialogInner({
           <View role="tabpanel">
             <Admonition type="tip">
               <Trans>
-                Bluesky is an open network where you can choose your own
-                provider. If you're new here, we recommend sticking with the
-                default Bluesky Social option.
+                TISM uses the AT Protocol, an open network where you can choose
+                your own provider. If you're new here, we recommend sticking
+                with the default TISM option.
               </Trans>
             </Admonition>
           </View>

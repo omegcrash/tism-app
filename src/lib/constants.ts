@@ -6,16 +6,18 @@ import {BLUESKY_PROXY_DID, CHAT_PROXY_DID} from '#/env'
 
 export const LOCAL_DEV_SERVICE =
   Platform.OS === 'android' ? 'http://10.0.2.2:2583' : 'http://localhost:2583'
-export const STAGING_SERVICE = 'https://staging.bsky.dev'
-export const BSKY_SERVICE = 'https://bsky.social'
-export const BSKY_SERVICE_DID = 'did:web:bsky.social'
-export const PUBLIC_BSKY_SERVICE = 'https://public.api.bsky.app'
+export const STAGING_SERVICE = 'https://staging.tism.social'
+// TISM: Primary service points to tism.social PDS
+export const BSKY_SERVICE = 'https://tism.social'
+export const BSKY_SERVICE_DID = 'did:web:tism.social'
+export const PUBLIC_BSKY_SERVICE = 'https://api.tism.social'
 export const DEFAULT_SERVICE = BSKY_SERVICE
+// TODO: Set up TISM help desk
 const HELP_DESK_LANG = 'en-us'
-export const HELP_DESK_URL = `https://blueskyweb.zendesk.com/hc/${HELP_DESK_LANG}`
-export const EMBED_SERVICE = 'https://embed.bsky.app'
+export const HELP_DESK_URL = `https://tism.social/help`
+export const EMBED_SERVICE = 'https://embed.tism.social'
 export const EMBED_SCRIPT = `${EMBED_SERVICE}/static/embed.js`
-export const BSKY_DOWNLOAD_URL = 'https://bsky.app/download'
+export const BSKY_DOWNLOAD_URL = 'https://tism.social/download'
 export const STARTER_PACK_MAX_SIZE = 150
 export const CARD_ASPECT_RATIO = 1200 / 630
 

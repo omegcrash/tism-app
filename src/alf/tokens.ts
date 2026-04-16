@@ -7,30 +7,39 @@ export const color = {
   temp_purple_dark: tokens.labelerColor.purple_dark,
 } as const
 
+/**
+ * TISM Gradients
+ * Earth tones and soft natural colors
+ * Designed to be calming and accessible
+ */
 export const gradients = {
+  // Primary: Turquoise to teal gradient
   primary: {
     values: [
-      [0, '#054CFF'],
-      [0.4, '#1085FE'],
-      [0.6, '#1085FE'],
-      [1, '#59B9FF'],
+      [0, '#0F7668'],
+      [0.4, '#14A894'],
+      [0.6, '#14A894'],
+      [1, '#4DD1C1'],
     ],
-    hover_value: '#1085FE',
+    hover_value: '#14A894',
   },
-  sky: {
+  // Turtle shell: Earth brown gradient
+  shell: {
     values: [
-      [0, '#0A7AFF'],
-      [1, '#59B9FF'],
+      [0, '#5D4E37'],
+      [1, '#A68B5B'],
     ],
-    hover_value: '#0A7AFF',
+    hover_value: '#7D6B4F',
   },
-  midnight: {
+  // Forest: Deep green earth tones
+  forest: {
     values: [
-      [0, '#022C5E'],
-      [1, '#4079BC'],
+      [0, '#1B5E20'],
+      [1, '#4CAF50'],
     ],
-    hover_value: '#022C5E',
+    hover_value: '#2E7D32',
   },
+  // Dawn: Soft warm sunrise
   sunrise: {
     values: [
       [0, '#4E90AE'],
@@ -40,6 +49,7 @@ export const gradients = {
     ],
     hover_value: '#AEA3AB',
   },
+  // Dusk: Soft purple to pink
   sunset: {
     values: [
       [0, '#6772AF'],
@@ -48,28 +58,31 @@ export const gradients = {
     ],
     hover_value: '#B88BB6',
   },
-  summer: {
+  // Clay: Terracotta earth tones
+  clay: {
     values: [
-      [0, '#FF6A56'],
-      [0.3, '#FF9156'],
-      [1, '#FFDD87'],
+      [0, '#8C3C2A'],
+      [0.5, '#C4553A'],
+      [1, '#DE7A5A'],
     ],
-    hover_value: '#FF9156',
+    hover_value: '#A84832',
   },
-  nordic: {
+  // River: Teal to aqua
+  river: {
     values: [
-      [0, '#083367'],
-      [1, '#9EE8C1'],
+      [0, '#08443C'],
+      [1, '#80DED2'],
     ],
-    hover_value: '#3A7085',
+    hover_value: '#128F7E',
   },
-  bonfire: {
+  // Sage: Soft muted green
+  sage: {
     values: [
-      [0, '#203E4E'],
-      [0.4, '#755B62'],
-      [0.8, '#CD7765'],
-      [1, '#EF956E'],
+      [0, '#3E5F4C'],
+      [0.4, '#5B8A6D'],
+      [0.8, '#8FB89F'],
+      [1, '#B5D4C2'],
     ],
-    hover_value: '#755B62',
+    hover_value: '#5B8A6D',
   },
 } as const

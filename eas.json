@@ -18,18 +18,35 @@
         "resourceClass": "large"
       },
       "env": {
-        "EXPO_PUBLIC_ENV": "production"
+        "EXPO_PUBLIC_ENV": "development"
       }
     },
     "preview": {
       "extends": "base",
       "distribution": "internal",
-      "channel": "production",
+      "channel": "preview",
       "ios": {
         "resourceClass": "large"
       },
+      "android": {
+        "buildType": "apk"
+      },
       "env": {
-        "EXPO_PUBLIC_ENV": "production"
+        "EXPO_PUBLIC_ENV": "staging"
+      }
+    },
+    "staging": {
+      "extends": "base",
+      "distribution": "internal",
+      "channel": "staging",
+      "ios": {
+        "resourceClass": "large"
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_ENV": "staging"
       }
     },
     "production": {
@@ -40,7 +57,8 @@
         "buildArtifactPaths": ["ios/build/*"]
       },
       "android": {
-        "autoIncrement": true
+        "autoIncrement": true,
+        "buildType": "app-bundle"
       },
       "channel": "production",
       "env": {
@@ -55,7 +73,8 @@
         "buildArtifactPaths": ["ios/build/*"]
       },
       "android": {
-        "autoIncrement": false
+        "autoIncrement": false,
+        "buildType": "apk"
       },
       "channel": "production",
       "env": {
@@ -75,27 +94,15 @@
       "env": {
         "EXPO_PUBLIC_ENV": "testflight"
       }
-    },
-    "testflight-android": {
-      "extends": "base",
-      "distribution": "internal",
-      "ios": {
-        "autoIncrement": true,
-        "buildArtifactPaths": ["ios/build/*"]
-      },
-      "android": {
-        "autoIncrement": true
-      },
-      "channel": "testflight",
-      "env": {
-        "EXPO_PUBLIC_ENV": "testflight"
-      }
     }
   },
   "submit": {
     "production": {
       "ios": {
-        "ascAppId": "6444370199"
+        "ascAppId": "TODO_TISM_APP_ID"
+      },
+      "android": {
+        "track": "internal"
       }
     }
   }

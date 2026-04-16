@@ -1,6 +1,6 @@
 {
-  "name": "bsky.app",
-  "version": "1.121.0",
+  "name": "tism.social",
+  "version": "0.1.0",
   "private": true,
   "engines": {
     "node": ">=20"
