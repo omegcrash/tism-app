@@ -4,8 +4,7 @@ import {useLingui} from '@lingui/react'
 
 import {useSession} from '#/state/session'
 
-export const ZENDESK_SUPPORT_URL =
-  'https://blueskyweb.zendesk.com/hc/requests/new'
+export const ZENDESK_SUPPORT_URL = 'https://tism.social/support' // TODO: Set up actual support system
 
 export enum SupportCode {
   AA_DID = 'AA_DID',

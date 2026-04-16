@@ -51,7 +51,7 @@ export async function shareImageModal(_opts: {uri: string}) {
 export async function saveImageToMediaLibrary({uri}: {uri: string}) {
   const downloadUri = convertCdnPreset(uri, 'download')
   const segments = downloadUri.split('/')
-  const filename = `bluesky-${segments.at(-1)}.jpg`
+  const filename = `tism-${segments.at(-1)}.jpg`
   downloadUrl(downloadUri, filename)
 }
 

@@ -12,11 +12,11 @@ export const BSKY_SERVICE_DID = 'did:web:bsky.social'
 export const PUBLIC_BSKY_SERVICE = 'https://public.api.bsky.app'
 export const TISM_SERVICE = 'https://tism.social'
 export const DEFAULT_SERVICE = TISM_SERVICE
-const HELP_DESK_LANG = 'en-us'
-export const HELP_DESK_URL = `https://blueskyweb.zendesk.com/hc/${HELP_DESK_LANG}`
-export const EMBED_SERVICE = 'https://embed.bsky.app'
+export const HELP_DESK_URL = 'https://tism.social/support'
+export const EMBED_SERVICE = 'https://embed.bsky.app' // TODO: TISM embed service
 export const EMBED_SCRIPT = `${EMBED_SERVICE}/static/embed.js`
-export const BSKY_DOWNLOAD_URL = 'https://bsky.app/download'
+export const TISM_DOWNLOAD_URL = 'https://tism.social/download'
+export const BSKY_DOWNLOAD_URL = TISM_DOWNLOAD_URL // alias for compatibility
 export const STARTER_PACK_MAX_SIZE = 150
 export const CARD_ASPECT_RATIO = 1200 / 630
 
@@ -206,14 +206,12 @@ export const EMOJI_REACTION_LIMIT = 5
 export const urls = {
   website: {
     blog: {
-      findFriendsAnnouncement:
-        'https://bsky.social/about/blog/12-16-2025-find-friends',
-      initialVerificationAnnouncement: `https://bsky.social/about/blog/04-21-2025-verification`,
-      searchTipsAndTricks: 'https://bsky.social/about/blog/05-31-2024-search',
+      findFriendsAnnouncement: 'https://tism.social/about',
+      initialVerificationAnnouncement: 'https://tism.social/about',
+      searchTipsAndTricks: 'https://tism.social/about',
     },
     support: {
-      findFriendsPrivacyPolicy:
-        'https://bsky.social/about/support/find-friends-privacy-policy',
+      findFriendsPrivacyPolicy: 'https://tism.social/privacy',
     },
   },
 }
@@ -249,8 +247,8 @@ export const BLUESKY_NOTIF_SERVICE_HEADERS = {
 }
 
 export const webLinks = {
-  tos: `https://bsky.social/about/support/tos`,
-  privacy: `https://bsky.social/about/support/privacy-policy`,
-  community: `https://bsky.social/about/support/community-guidelines`,
-  communityDeprecated: `https://bsky.social/about/support/community-guidelines-deprecated`,
+  tos: 'https://tism.social/tos',
+  privacy: 'https://tism.social/privacy',
+  community: 'https://tism.social/community-guidelines',
+  communityDeprecated: 'https://tism.social/community-guidelines',
 }
