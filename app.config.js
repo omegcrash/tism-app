@@ -257,7 +257,7 @@ module.exports = function (_config) {
             ios: {
               deploymentTarget: '15.1',
               buildReactNativeFromSource: true,
-              ccacheEnabled: IS_DEV,
+              ccacheEnabled: false, // Disabled - causes path issues with extensions
               extraPods: [
                 {
                   name: 'MCEmojiPicker',
