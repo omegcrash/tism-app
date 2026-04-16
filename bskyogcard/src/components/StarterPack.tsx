@@ -1,9 +1,9 @@
 /* eslint-disable bsky-internal/avoid-unwrapped-text */
 import React from 'react'
-import {AppBskyGraphDefs, AppBskyGraphStarterpack} from '@atproto/api'
+import {type AppBskyGraphDefs, AppBskyGraphStarterpack} from '@atproto/api'
 
-import {Butterfly} from './Butterfly.js'
 import {Img} from './Img.js'
+import {Turtle} from './Turtle.js'
 
 export const STARTERPACK_HEIGHT = 630
 export const STARTERPACK_WIDTH = 1200
@@ -144,7 +144,7 @@ export function StarterPack(props: {
             justifyContent: 'center',
             padding: '30px 30px 10px',
           }}>
-          on <Butterfly width="65" style={{margin: '-7px 10px 0'}} /> Bluesky
+          on <Turtle width="65" style={{margin: '-7px 10px 0'}} /> TISM
         </div>
       </div>
     </div>
