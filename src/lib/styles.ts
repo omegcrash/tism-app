@@ -8,7 +8,7 @@ import {type Theme, type TypographyVariant} from './ThemeContext'
  * @deprecated use ALF colors instead
  */
 export const colors = {
-  white: '#ffffff',
+  white: '#FFFAF5', // TISM warm cream (was #ffffff)
   black: '#000000',
 
   gray1: '#F3F3F8',

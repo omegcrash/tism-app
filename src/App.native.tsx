@@ -174,7 +174,10 @@ function InnerApp() {
                                                     <EmailVerificationProvider>
                                                       <HideBottomBarBorderProvider>
                                                         <GestureHandlerRootView
-                                                          style={a.h_full}>
+                                                          style={[
+                                                            a.h_full,
+                                                            theme.atoms.bg,
+                                                          ]}>
                                                           <GlobalGestureEventsProvider>
                                                             <IntentDialogProvider>
                                                               <TranslateOnDeviceProvider>
