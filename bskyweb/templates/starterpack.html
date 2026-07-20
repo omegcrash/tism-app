@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block html_head_extra -%}
-  <meta name="apple-itunes-app" content="app-id=xyz.blueskyweb.app, app-clip-bundle-id=xyz.blueskyweb.app.AppClip, app-clip-display=card">
+  {# apple-itunes-app banner removed: it pointed iOS users at the upstream
+     Bluesky app (xyz.blueskyweb.app). Restore with TISM's own app id when
+     a TISM iOS build ships. #}
   {%- if requestURI %}
   <meta property="og:url" content="{{ requestURI }}">
   {% endif -%}
