@@ -42,6 +42,10 @@ ENV SENTRY_AUTH_TOKEN=${SENTRY_AUTH_TOKEN:-unknown}
 ARG EXPO_PUBLIC_SENTRY_DSN
 ENV EXPO_PUBLIC_SENTRY_DSN=$EXPO_PUBLIC_SENTRY_DSN
 
+# Webpack needs more heap than node's default ~2GB cap; overridable per host.
+ARG NODE_OPTIONS=--max-old-space-size=4096
+ENV NODE_OPTIONS=$NODE_OPTIONS
+
 #
 # Copy everything into the container
 #
