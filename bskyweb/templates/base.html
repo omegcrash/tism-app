@@ -52,9 +52,11 @@
       font-synthesis-weight: none;
     }
     :root {
-      --text: black;
-      --background: white;
-      --backgroundLight: #e2e7ee;
+      --text: #1A1512;
+      /* TISM warm white (birch bark) — must match tism-palette contrast_0,
+         or the page flashes stock white behind the app while scrolling */
+      --background: #FFFAF5;
+      --backgroundLight: #EDE5DC;
     }
     @media (prefers-color-scheme: dark) {
       :root {
@@ -75,10 +77,10 @@
     html.theme--light,
     html.theme--light body,
     html.theme--light #root {
-      background-color: white;
-      --text: black;
-      --background: white;
-      --backgroundLight: #DCE2EA;
+      background-color: #FFFAF5;
+      --text: #1A1512;
+      --background: #FFFAF5;
+      --backgroundLight: #EDE5DC;
     }
     html.theme--dark,
     html.theme--dark body,
