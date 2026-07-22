@@ -85,4 +85,47 @@ export const gradients = {
     ],
     hover_value: '#5B8A6D',
   },
+  // Backwards compatibility aliases for upstream Bluesky code
+  sky: {
+    values: [
+      [0, '#0F7668'],
+      [0.4, '#14A894'],
+      [0.6, '#14A894'],
+      [1, '#4DD1C1'],
+    ],
+    hover_value: '#14A894',
+  },
+  midnight: {
+    values: [
+      [0, '#1B5E20'],
+      [1, '#4CAF50'],
+    ],
+    hover_value: '#2E7D32',
+  },
+  bonfire: {
+    values: [
+      [0, '#8C3C2A'],
+      [0.5, '#C4553A'],
+      [1, '#DE7A5A'],
+    ],
+    hover_value: '#A84832',
+  },
+  summer: {
+    values: [
+      [0, '#4E90AE'],
+      [0.4, '#AEA3AB'],
+      [0.8, '#E6A98F'],
+      [1, '#F3A84C'],
+    ],
+    hover_value: '#AEA3AB',
+  },
+  nordic: {
+    values: [
+      [0, '#3E5F4C'],
+      [0.4, '#5B8A6D'],
+      [0.8, '#8FB89F'],
+      [1, '#B5D4C2'],
+    ],
+    hover_value: '#5B8A6D',
+  },
 } as const

@@ -1,4 +1,4 @@
-import Svg, {Text, type PathProps, type SvgProps} from 'react-native-svg'
+import Svg, {type PathProps, type SvgProps, Text} from 'react-native-svg'
 
 import {usePalette} from '#/lib/hooks/usePalette'
 
