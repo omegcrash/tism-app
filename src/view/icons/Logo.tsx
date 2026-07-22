@@ -5,14 +5,17 @@ import Svg, {
   Defs,
   Ellipse,
   LinearGradient,
+  Path,
   type PathProps,
   Stop,
   type SvgProps,
 } from 'react-native-svg'
+import {Image} from 'expo-image'
 
+import {useKawaiiMode} from '#/state/preferences/kawaii'
 import {flatten, useTheme} from '#/alf'
 
-const ratio = 1 // Square for turtle
+const ratio = 1
 
 type Props = {
   fill?: PathProps['fill']
@@ -21,19 +24,37 @@ type Props = {
 
 /**
  * TISM Turtle Logo
- * Turtle Island - sacred symbol representing North America
- * in many Indigenous traditions
+ * A friendly, welcoming turtle representing Turtle Island Social Media
+ * Soft earth tones, accessible design
  */
 export const Logo = forwardRef(function LogoImpl(props: Props, ref) {
   const t = useTheme()
   const {fill, ...rest} = props
-  const gradient = fill === 'sky'
+  const gradient = fill === 'sky' || fill === 'river'
   const styles = flatten(props.style)
   const _fill = gradient
-    ? 'url(#tism)'
+    ? 'url(#river)'
     : fill || styles?.color || t.palette.primary_500
   // @ts-ignore it's fiiiiine
   const size = parseInt(rest.width || 32, 10)
+
+  const isKawaii = useKawaiiMode()
+
+  if (isKawaii) {
+    return (
+      <Image
+        source={
+          size > 100
+            ? require('../../../assets/kawaii.png')
+            : require('../../../assets/kawaii_smol.png')
+        }
+        accessibilityLabel="TISM"
+        accessibilityHint=""
+        accessibilityIgnoresInvertColors
+        style={[{height: size, aspectRatio: 1}]}
+      />
+    )
+  }
 
   return (
     <Svg
@@ -45,82 +66,64 @@ export const Logo = forwardRef(function LogoImpl(props: Props, ref) {
       style={[{width: size, height: size * ratio}, styles]}>
       {gradient && (
         <Defs>
-          <LinearGradient id="tism" x1="0" y1="0" x2="0" y2="1">
-            <Stop offset="0" stopColor="#20C9B3" stopOpacity="1" />
-            <Stop offset="1" stopColor="#0F8A7A" stopOpacity="1" />
+          <LinearGradient id="river" x1="0" y1="0" x2="0" y2="1">
+            <Stop offset="0" stopColor="#0F7668" stopOpacity="1" />
+            <Stop offset="1" stopColor="#4DD1C1" stopOpacity="1" />
           </LinearGradient>
         </Defs>
       )}
 
-      {/* Turtle Shell (main body) */}
-      <Ellipse cx="32" cy="34" rx="18" ry="16" fill={_fill} />
-
-      {/* Shell pattern - 13 sections representing 13 moons */}
+      {/* Turtle shell - main body */}
       <Ellipse
         cx="32"
         cy="34"
-        rx="12"
-        ry="10"
-        fill="none"
-        stroke={_fill}
-        strokeWidth="1.5"
-        strokeOpacity="0.4"
+        rx="20"
+        ry="18"
+        fill={_fill}
       />
-      <Circle
-        cx="32"
-        cy="34"
-        r="5"
+
+      {/* Shell pattern - hexagonal segments */}
+      <Path
         fill="none"
-        stroke={_fill}
+        stroke={t.palette.white}
         strokeWidth="1.5"
-        strokeOpacity="0.4"
+        strokeOpacity="0.3"
+        d="M32 20 L32 48 M18 28 L46 28 M18 40 L46 40 M22 24 L22 44 M42 24 L42 44"
       />
 
       {/* Head */}
-      <Ellipse cx="32" cy="14" rx="6" ry="7" fill={_fill} />
-
-      {/* Front left leg */}
-      <Ellipse
-        cx="16"
-        cy="26"
-        rx="5"
-        ry="4"
+      <Circle
+        cx="32"
+        cy="14"
+        r="8"
         fill={_fill}
-        transform="rotate(-30 16 26)"
       />
 
-      {/* Front right leg */}
-      <Ellipse
-        cx="48"
-        cy="26"
-        rx="5"
-        ry="4"
-        fill={_fill}
-        transform="rotate(30 48 26)"
+      {/* Eyes - friendly expression */}
+      <Circle cx="29" cy="13" r="2" fill={t.palette.white} />
+      <Circle cx="35" cy="13" r="2" fill={t.palette.white} />
+      <Circle cx="29.5" cy="13.5" r="1" fill={t.palette.black} />
+      <Circle cx="35.5" cy="13.5" r="1" fill={t.palette.black} />
+
+      {/* Smile */}
+      <Path
+        fill="none"
+        stroke={t.palette.white}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        d="M29 17 Q32 19 35 17"
       />
 
-      {/* Back left leg */}
-      <Ellipse
-        cx="16"
-        cy="44"
-        rx="5"
-        ry="4"
-        fill={_fill}
-        transform="rotate(30 16 44)"
-      />
+      {/* Front legs */}
+      <Ellipse cx="14" cy="30" rx="6" ry="4" fill={_fill} />
+      <Ellipse cx="50" cy="30" rx="6" ry="4" fill={_fill} />
 
-      {/* Back right leg */}
-      <Ellipse
-        cx="48"
-        cy="44"
-        rx="5"
-        ry="4"
-        fill={_fill}
-        transform="rotate(-30 48 44)"
-      />
+      {/* Back legs */}
+      <Ellipse cx="16" cy="44" rx="5" ry="4" fill={_fill} />
+      <Ellipse cx="48" cy="44" rx="5" ry="4" fill={_fill} />
 
       {/* Tail */}
-      <Ellipse cx="32" cy="54" rx="3" ry="5" fill={_fill} />
+      <Ellipse cx="32" cy="54" rx="4" ry="3" fill={_fill} />
     </Svg>
   )
 })

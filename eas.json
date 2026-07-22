@@ -6,10 +6,7 @@
   },
   "build": {
     "base": {
-      "node": "20.19.4",
-      "env": {
-        "GOOGLE_SERVICES_JSON": "@GOOGLE_SERVICES_JSON"
-      }
+      "node": "20.19.4"
     },
     "development": {
       "extends": "base",
@@ -17,7 +14,8 @@
       "distribution": "internal",
       "channel": "development",
       "ios": {
-        "simulator": true
+        "simulator": true,
+        "resourceClass": "large"
       },
       "env": {
         "EXPO_PUBLIC_ENV": "development"
@@ -27,6 +25,26 @@
       "extends": "base",
       "distribution": "internal",
       "channel": "preview",
+      "ios": {
+        "resourceClass": "large"
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_ENV": "staging"
+      }
+    },
+    "staging": {
+      "extends": "base",
+      "distribution": "internal",
+      "channel": "staging",
+      "ios": {
+        "resourceClass": "large"
+      },
+      "android": {
+        "buildType": "apk"
+      },
       "env": {
         "EXPO_PUBLIC_ENV": "staging"
       }
@@ -34,11 +52,13 @@
     "production": {
       "extends": "base",
       "ios": {
+        "resourceClass": "large",
         "autoIncrement": true,
         "buildArtifactPaths": ["ios/build/*"]
       },
       "android": {
-        "autoIncrement": true
+        "autoIncrement": true,
+        "buildType": "app-bundle"
       },
       "channel": "production",
       "env": {
@@ -53,7 +73,8 @@
         "buildArtifactPaths": ["ios/build/*"]
       },
       "android": {
-        "autoIncrement": false
+        "autoIncrement": false,
+        "buildType": "apk"
       },
       "channel": "production",
       "env": {

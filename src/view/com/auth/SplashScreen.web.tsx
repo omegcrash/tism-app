@@ -87,7 +87,7 @@ export const SplashScreen = ({
           ]}>
           <ErrorBoundary>
             <View style={[a.justify_center, a.align_center]}>
-              <Logo width={kawaii ? 300 : 92} fill="sky" />
+              <Logo width={kawaii ? 300 : 92} fill="river" />
 
               {!kawaii && (
                 <View style={[a.pb_sm, a.pt_5xl]}>
@@ -170,19 +170,21 @@ function Footer() {
         t.atoms.border_contrast_medium,
       ]}>
       <InlineLinkText
-        label={_(msg`Learn more about Turtle Island Social Media`)}
-        to="https://bsky.social">
-        <Trans>Business</Trans>
+        label={_(msg`Learn more about TISM`)}
+        to="https://tism.social/about">
+        <Trans>About</Trans>
       </InlineLinkText>
       <InlineLinkText
         label={_(msg`Read the TISM blog`)}
-        to="https://bsky.social/about/blog">
+        to="https://tism.social/blog">
         <Trans>Blog</Trans>
       </InlineLinkText>
       <InlineLinkText
-        label={_(msg`See jobs at TISM`)}
-        to="https://bsky.social/about/join">
-        <Trans comment="Link to a page with job openings at TISM">Jobs</Trans>
+        label={_(msg`Support TISM`)}
+        to="https://tism.social/support">
+        <Trans comment="Link to support page for TISM">
+          Support
+        </Trans>
       </InlineLinkText>
 
       <View style={a.flex_1} />

@@ -24,7 +24,9 @@ module.exports = function (_config) {
 
   const ASSOCIATED_DOMAINS = [
     'applinks:tism.social',
+    'applinks:staging.tism.social',
     'appclips:tism.social',
+    'appclips:go.tism.social',
     // When testing local services, enter an ngrok (et al) domain here. It must use a standard HTTP/HTTPS port.
     ...(IS_DEV || IS_TESTFLIGHT ? [] : []),
   ]
@@ -46,13 +48,13 @@ module.exports = function (_config) {
       name: 'TISM',
       slug: 'tism',
       scheme: 'tism',
-      owner: 'tism',
+      owner: 'turtleisland',
       runtimeVersion: {
         policy: 'appVersion',
       },
       icon: './assets/app-icons/ios_icon_default_next.png',
       userInterfaceStyle: 'automatic',
-      primaryColor: '#14A894', // TISM turquoise
+      primaryColor: '#14A894',
       newArchEnabled: false,
       ios: {
         supportsTablet: false,
@@ -72,7 +74,7 @@ module.exports = function (_config) {
             'Used to save images to your library.',
           NSPhotoLibraryUsageDescription:
             'Used for profile pictures, posts, and other kinds of content',
-          CFBundleSpokenName: 'Turtle Island',
+          CFBundleSpokenName: 'Tism',
           CFBundleLocalizations: [
             'en',
             'an',
@@ -120,7 +122,7 @@ module.exports = function (_config) {
         entitlements: {
           'com.apple.developer.kernel.increased-memory-limit': true,
           'com.apple.developer.kernel.extended-virtual-addressing': true,
-          'com.apple.security.application-groups': 'group.app.bsky',
+          'com.apple.security.application-groups': 'group.social.tism',
           // 'com.apple.developer.device-information.user-assigned-device-name': true,
         },
         privacyManifests: {
@@ -187,7 +189,7 @@ module.exports = function (_config) {
         adaptiveIcon: {
           foregroundImage: './assets/icon-android-foreground.png',
           monochromeImage: './assets/icon-android-monochrome.png',
-          backgroundColor: '#14A894', // TISM turquoise
+          backgroundColor: '#14A894',
         },
         googleServicesFile: './google-services.json',
         package: 'social.tism.app',
@@ -217,7 +219,7 @@ module.exports = function (_config) {
         favicon: './assets/favicon.png',
       },
       updates: {
-        url: 'https://u.expo.dev/f29b386f-4fad-4f75-81f5-d6358d132227',
+        url: 'https://updates.tism.social/manifest',
         enabled: UPDATES_ENABLED,
         fallbackToCacheTimeout: 30000,
         codeSigningCertificate: UPDATES_ENABLED
@@ -257,7 +259,7 @@ module.exports = function (_config) {
             ios: {
               deploymentTarget: '15.1',
               buildReactNativeFromSource: true,
-              ccacheEnabled: false, // Disabled - causes path issues with extensions
+              ccacheEnabled: IS_DEV,
               extraPods: [
                 {
                   name: 'MCEmojiPicker',
@@ -278,7 +280,7 @@ module.exports = function (_config) {
           'expo-notifications',
           {
             icon: './assets/icon-android-notification.png',
-            color: '#14A894', // TISM turquoise
+            color: '#14A894',
             sounds: PLATFORM === 'ios' ? ['assets/dm.aiff'] : ['assets/dm.mp3'],
           },
         ],
@@ -321,22 +323,22 @@ module.exports = function (_config) {
           {
             ios: {
               enableFullScreenImage_legacy: true, // iOS only
-              backgroundColor: '#14A894', // TISM turquoise
+              backgroundColor: '#14A894', // TISM turquoise primary_500
               image: './assets/splash/splash.png',
               resizeMode: 'cover',
               dark: {
                 enableFullScreenImage_legacy: true, // iOS only
-                backgroundColor: '#0A2D2B', // TISM turquoise dark
+                backgroundColor: '#08443C', // TISM turquoise primary_900
                 image: './assets/splash/splash-dark.png',
                 resizeMode: 'cover',
               },
             },
             android: {
-              backgroundColor: '#14A894', // TISM turquoise
+              backgroundColor: '#14A894', // TISM turquoise primary_500
               image: './assets/splash/android-splash-logo-white.png',
               imageWidth: 102, // even division of 306px
               dark: {
-                backgroundColor: '#0A2D2B', // TISM turquoise dark
+                backgroundColor: '#08443C', // TISM turquoise primary_900
                 image: './assets/splash/android-splash-logo-white.png',
                 imageWidth: 102,
               },
@@ -452,7 +454,8 @@ module.exports = function (_config) {
               },
             },
           },
-          projectId: 'f29b386f-4fad-4f75-81f5-d6358d132227',
+          // TODO: Create new EAS project for TISM
+          projectId: '55bd077a-d905-4184-9c7f-94789ba0f302',
         },
       },
     },

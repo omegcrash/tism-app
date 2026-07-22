@@ -160,9 +160,9 @@ function DialogInner({
           <View role="tabpanel">
             <Admonition type="tip">
               <Trans>
-                Turtle Island is an open network where you can choose your own
-                provider. If you're new here, we recommend sticking with the
-                default TISM option.
+                TISM uses the AT Protocol, an open network where you can choose
+                your own provider. If you're new here, we recommend sticking
+                with the default TISM option.
               </Trans>
             </Admonition>
           </View>

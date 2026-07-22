@@ -6,17 +6,17 @@ import {BLUESKY_PROXY_DID, CHAT_PROXY_DID} from '#/env'
 
 export const LOCAL_DEV_SERVICE =
   Platform.OS === 'android' ? 'http://10.0.2.2:2583' : 'http://localhost:2583'
-export const STAGING_SERVICE = 'https://staging.bsky.dev'
-export const BSKY_SERVICE = 'https://bsky.social'
-export const BSKY_SERVICE_DID = 'did:web:bsky.social'
-export const PUBLIC_BSKY_SERVICE = 'https://public.api.bsky.app'
-export const TISM_SERVICE = 'https://tism.social'
+export const STAGING_SERVICE = 'https://staging.tism.social'
+export const BSKY_SERVICE = 'https://tism.social'
+export const BSKY_SERVICE_DID = 'did:web:tism.social'
+export const PUBLIC_BSKY_SERVICE = 'https://api.tism.social'
+export const TISM_SERVICE = BSKY_SERVICE
 export const DEFAULT_SERVICE = TISM_SERVICE
 export const HELP_DESK_URL = 'https://tism.social/support'
-export const EMBED_SERVICE = 'https://embed.bsky.app' // TODO: TISM embed service
+export const EMBED_SERVICE = 'https://embed.tism.social'
 export const EMBED_SCRIPT = `${EMBED_SERVICE}/static/embed.js`
 export const TISM_DOWNLOAD_URL = 'https://tism.social/download'
-export const BSKY_DOWNLOAD_URL = TISM_DOWNLOAD_URL // alias for compatibility
+export const BSKY_DOWNLOAD_URL = TISM_DOWNLOAD_URL
 export const STARTER_PACK_MAX_SIZE = 150
 export const CARD_ASPECT_RATIO = 1200 / 630
 
