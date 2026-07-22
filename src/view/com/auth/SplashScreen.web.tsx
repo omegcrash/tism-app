@@ -182,9 +182,7 @@ function Footer() {
       <InlineLinkText
         label={_(msg`Support TISM`)}
         to="https://tism.social/support">
-        <Trans comment="Link to support page for TISM">
-          Support
-        </Trans>
+        <Trans comment="Link to support page for TISM">Support</Trans>
       </InlineLinkText>
 
       <View style={a.flex_1} />

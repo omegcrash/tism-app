@@ -74,13 +74,7 @@ export const Logo = forwardRef(function LogoImpl(props: Props, ref) {
       )}
 
       {/* Turtle shell - main body */}
-      <Ellipse
-        cx="32"
-        cy="34"
-        rx="20"
-        ry="18"
-        fill={_fill}
-      />
+      <Ellipse cx="32" cy="34" rx="20" ry="18" fill={_fill} />
 
       {/* Shell pattern - hexagonal segments */}
       <Path
@@ -92,12 +86,7 @@ export const Logo = forwardRef(function LogoImpl(props: Props, ref) {
       />
 
       {/* Head */}
-      <Circle
-        cx="32"
-        cy="14"
-        r="8"
-        fill={_fill}
-      />
+      <Circle cx="32" cy="14" r="8" fill={_fill} />
 
       {/* Eyes - friendly expression */}
       <Circle cx="29" cy="13" r="2" fill={t.palette.white} />
